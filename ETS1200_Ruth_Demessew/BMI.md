@@ -37,15 +37,11 @@ step 4: End.
 flowchart TD
     id1([Start]) --> id2[/Input: Number of people for BMI calculation/]
     id2 --> id3{Counter <= num}
-
-    %% Start Loop
     id3 --True--> id4["Initialize Person: Counter"]
     id4 --> id5[/Input: Weight in kilograms/]
     id5 --> id6[/Input: Height in meters/]
     id6 --> id7["BMI = Weight / (Height * Height)"]
     id7 --> id8[/Output: BMI/]
-
-    %% BMI Categories
     id8 --> id9{BMI < 18.5}
     id9 --True--> id10["Output: Underweight"]
     id9 --False--> id11{BMI >= 18.5 && BMI <= 24.9}
@@ -54,15 +50,11 @@ flowchart TD
     id13 --True--> id14["Output: Overweight"]
     id13 --False--> id15{BMI >= 30}
     id15 --True--> id16["Output: Obese"]
-
-    %% Loop Control
     id10 --> id17["Increment Counter"]
     id12 --> id17
     id14 --> id17
     id16 --> id17
     id17 --> id3
-
-    %% End Loop
     id3 --False--> id18([End])
 
 
