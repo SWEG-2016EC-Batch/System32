@@ -33,4 +33,6 @@ Set totalDistance = tankCapacity * milesPerGallon.
 Step 8: Display the message:
 
 "The automobile can be driven for ", totalDistance, " miles without refueling."
-Step 9: end.
+Step
+
+9: end.
