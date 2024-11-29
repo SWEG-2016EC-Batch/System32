@@ -25,11 +25,11 @@ Step 3 : Propmt the user to enter number of miles the automobile can travel per 
 
 
 # Flowchart
-::: mermaid
+``` mermaid
 flowchart 
 id1([Start])-->id2[/Fuel capacity/]
 id2-->id3[/Miles per gallon/]
 id3-->id4["Number of miles =(Fuel capacity/ miles per gallon)"]
 id4-->id5[/Number of miles/]
 id5-->id6([End])
-:::
+```
