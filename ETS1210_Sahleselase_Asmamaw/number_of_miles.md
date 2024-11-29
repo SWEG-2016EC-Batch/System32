@@ -4,11 +4,11 @@
 2. Number of miles the automobile can travel per one gallon of fuel(mpg).
 ## Output
 1. The total mile the automobile can travel based on its capacity and miles per gallon. 
-# Operations
+## Operations
 1. Calculate the number of miles using the formula:
 ### Number of miles =(Fuel capacity of the automobile/Number of miles per gallon)
 
-# Psudocode
+# Pseudocode
 Step 1 : Start.
 
 Step 2 : Propmt the user to enter the fuel capacity of the automobile(g).
