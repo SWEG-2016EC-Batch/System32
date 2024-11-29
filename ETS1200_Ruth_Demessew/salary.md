@@ -1,4 +1,4 @@
-Problem Analysis
+# Problem Analysis
 The task is to calculate the gross salary, net salary, and bonus payment for an employee based on their input data. To achieve this, the program follows three main steps: Input, Processing, and Output.
 Input:
 employee_name: The name of the employee (a string).
@@ -18,7 +18,7 @@ The employee's gross salary in birr.
 The employee's net salary in birr.
 The employee's bonus payment in birr.
 
-Algorithm
+# Algorithm
 step 1: Start
 step 2: Prompt the user to enter their name and store it in employee_name.
 step 3: Prompt the user to enter the base salary.
@@ -35,6 +35,8 @@ step 8: Calculate Deductions:
 step 9: Calculate Net Salary: Subtract pension_deduction and tax_deduction from gross_salary and store the result in net_salary.
 step 10: Display the employee_name, gross_salary, net_salary, and bouns_payment.
 step 11: End
+
+# Flowchart
 
 ```mermaid
 flowchart TD
