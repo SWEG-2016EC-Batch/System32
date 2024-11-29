@@ -1,53 +1,61 @@
-Problem Analysis
-Problem Statement:
+# Problem Analysis
+The problem requires the conversion of second into different time forms using the following relation.
+#### 1 Day = 86400 Seconds
+#### 1 Hour = 3600 Seconds
+#### 1 Minute = 60 Seconds
+## Inputs
+1. File size(in bytes).
+## Output
+1. The time requred to transfer the file. 
+# Oprations
+1. Calculate the total time in seconds.
+   #### Total seconds = File size in bytes/Transfer rate
+2. Calculate the amount of days.
+   #### Days = Total seconds/86400
+3. Calculate the amount of hours.
+   #### Hours = (Total seconds%86400)/3600
+4. Calculate the amount of minutes.
+   #### Minutes = ((Total seconds%86400)%3600)/60
+5. Calculate the amount of seconds.
+   #### Seconds = ((Total seconds%86400)%3600)%60
 
-We are to determine how long it takes to transmit a file across a serial transmission line that sends at a rate of 960 characters per second. The user will provide the size of the file in bytes.
-Inputs:
+# Psudocode
+Step 1 : Start.
 
-The size of the file in bytes (integer).
-Outputs:
+Step 2 : Propmt the user to enter the file size.
 
-The time to transmit the file in seconds (floating-point number).
-Constraints:
+Step 3 : Initialize Transefer rate = 960.
 
-The file size must be greater than or equal to zero (0 or greater).
+Step 4 : Total seconds = File size/Transfer rate.
 
+Step 5 : Days = Total seconds/86400.
+     
+Step 6 : Hours = (Total seconds%86400)/3600.
+ 
+Step 7 : Minutes = ((Total seconds%86400)%3600)/60.
 
-Input data and expected output Each character in the file is represented by 1 byte.
-BEGIN
+Step 8 : Seconds = ((Total seconds%86400)%3600)%60.
 
-  Constants
-    DEFINE CHAR_SIZE AS 1                
-    DEFINE TRANSMISSION_RATE AS 960     
+Step 9 : Out put the total time.
 
- Variables
-    DECLARE fileSize AS INTEGER
-    DECLARE fileSizeCharacters AS DOUBLE
-    DECLARE timeSeconds AS DOUBLE
-    
-pseudocode
-
-step 1: start
-
-Step 2: get the user input
-    PRINT "Enter the file size in bytes: "
-    READ fileSize
+Step 10 : End.
 
 
-   Step 3: Input validation
-    IF fileSize < 0 THEN
-        PRINT "File size cannot be negative."
-        EXIT
+# Flowchart
+``` mermaid
+flowchart 
+id1([Start])-->id2[/File size/]
+id2-->id3[Transfer rate = 960]
+id3-->id4[Total seconds = File size/Transfer rate]
+id4-->id5[Days = Total seconds/86400]
+id5-->id6["Hours = (Total seconds%86400)/3600"]
+id6-->id7["Minutes = ((Total seconds%86400)%3600)/60"]
+id7-->id8["Seconds = ((Total seconds%86400)%3600)%60"]
+id8-->id9[/Total time/]
+id9-->id10([End])
 
 
-Step 4: Determine the number of characters in the file
-    fileSizeCharacters = fileSize / CHAR_SIZE
 
-    
-Step 5: Compute the time to transmit the file
-timeSeconds = fileSizeCharacters / TRANSMISSION_RATE
 
- Step 6: Output the result
-PRINT "Time to transmit the file: ", timeSeconds, " seconds
-step 7: End
-    
+
+```
