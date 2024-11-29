@@ -1,4 +1,4 @@
-Problem Analysis
+# Problem Analysis
 The goal of the program is to calculate the Body Mass Index (BMI) for multiple people, determine their weight category, and provide feedback based on their BMI.
 1. Inputs:
 The number of people whose BMI needs to be calculated (num).
@@ -18,7 +18,7 @@ Display the BMI for each individual.
 Provide feedback on their weight category.
 
 
-Algorithm
+# Algorithm
 step 1: Start.
 step 2: Prompt the user to input the number of people (num).
 step 3: For each person from 1 to num:
@@ -32,6 +32,8 @@ step 3: For each person from 1 to num:
                    step 3.5.3: If 25 ≤ BMI < 29.9, display "You are overweight!"
                    step 3.5.4: If BMI ≥ 30, display "You are obese!"
 step 4: End.
+
+# Flowchart
 
 ```mermaid
 flowchart TD
