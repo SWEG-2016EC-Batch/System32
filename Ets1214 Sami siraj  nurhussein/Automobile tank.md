@@ -17,7 +17,7 @@ Step 3 : Propmt the user to enter number of miles the automobile can travel per 
      
 
      
- Step 4 : Number of miles =(Fuel capacity of the automobile/Number of miles per gallon).
+ Step 4 : Number of miles =(Fuel capacity of the automobile*Number of miles per gallon).
  
  Step 5 : Output the number of miles.
  
@@ -29,7 +29,7 @@ Step 3 : Propmt the user to enter number of miles the automobile can travel per 
 flowchart 
 id1([Start])-->id2[/Fuel capacity/]
 id2-->id3[/Miles per gallon/]
-id3-->id4["Number of miles =(Fuel capacity/ miles per gallon)"]
+id3-->id4["Number of miles =(Fuel capacity* miles per gallon)"]
 id4-->id5[/Number of miles/]
 id5-->id6([End])
 ```
