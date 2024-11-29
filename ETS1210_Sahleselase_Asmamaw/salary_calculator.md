@@ -9,7 +9,7 @@
 2. Gross salary.
 3. Bonus payment.
 4. Employee name.
-# Oprations
+# Operations
 1. Initialize the tax rete and pension rate.
 2. Check whether or not the enterd values are valid.
 3. Calculate the bonus payment by using the formula:
