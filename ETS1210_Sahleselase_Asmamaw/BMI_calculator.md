@@ -5,7 +5,7 @@
 ## Output
 1. The BMI of each individual
 2. Their weight group. 
-# Oprations
+# Operations
 1. Calculate the BMI.
 2. Assign a weight group depending on the BMI. Under weight (BMI <= 18.5), healthy weight ( BMI >18.5 and <25) and over weight(BMI >=25).
 # Psudocode
