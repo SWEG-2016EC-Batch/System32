@@ -27,7 +27,7 @@ Step 8 : End.
 
 
 # Flowchart
-::: mermaid
+``` mermaid
 flowchart 
 id1([Start])-->id2[Result=1]
 id2-->id3[/"Base number(x)"/]
@@ -41,4 +41,4 @@ id6--False----->id10[/Result/]
 id5--False-->id9[/Error message/]
 id9-->id11([End])
 id10-->id11
-:::
+```
