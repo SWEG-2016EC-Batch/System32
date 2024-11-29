@@ -5,6 +5,7 @@ the program will display the total distance that can be driven without refueling
 
 
 pseudocode
+
 Step 1: start
 
 Step 2: Declare variables:
