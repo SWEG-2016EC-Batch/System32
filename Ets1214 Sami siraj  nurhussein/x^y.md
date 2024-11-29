@@ -1,28 +1,44 @@
-Problem Analysis
+# Problem Analysis
+## Inputs
+1. The base number(x).
+2. The exponent(y).
+## Output
+1. The base number raised to its exponent
+# Oprations
+1. Calculate the result when the base number is raised to the exponent using a for loop.where the base number is multiplied by its self and where the exponent decides the number of loops.
+### Number of miles =(Fuel capacity of the automobile/Number of miles per gallon)
 
-This is a simple C++ program that calculates the power of a number. The program asks the user to input two floating-point numbers, ( x ) and ( y ), then calculates ( x^y ) 
-(x raised to the power of y) using the pow function from the <cmath> library, and finally outputs the result.
+# Psudocode
+Step 1 : Start.
 
-Key Components:
-Input: The program prompts the user for two floating-point numbers:  x, the base, and  y, the exponent.
-Processing: The program computes the power using the pow function, which returns  x raised to the power of  y.
+Step 2 : Initialize result = 1.
 
-pseudocode
+Step 3 : Propmt the user to enter the the base number(x).
 
-step1:Begin
+Step 4 : Propmt the user to enter the exponent(y).
 
-step2:Declare variables to store values of x, y and result of power calculation.
+Step 5 : if y<0, out put an error message.
 
-step3: Ask the user to input the value of ( x ).
+Step 6 : if y>=0, for each value of the from 1 to y: result*=x.
+ 
+Step 7 : Output result.
 
-step4: Input value of ( x ).
+Step 8 : End.
 
-step5: Ask the user to input the value of ( y ).
 
-step6: Input value of ( y ).
-
-step6: Compute the value of ( x ) raised to the power of ( y ) using pow function and store it in the variable power.
-
-step7: Print the result to the user.
-
-step8: Stop
+# Flowchart
+``` mermaid
+flowchart 
+id1([Start])-->id2[Result=1]
+id2-->id3[/"Base number(x)"/]
+id3-->id4[/"Exponent(y)"/]
+id4-->id5{Exponent >= 0}
+id5--True--->id6{Counter< Exponent}
+id6--True--->id7["Result*=Base number(x)"]
+id7--->id12[counter++]
+id12-->id6
+id6--False----->id10[/Result/]
+id5--False-->id9[/Error message/]
+id9-->id11([End])
+id10-->id11
+```
