@@ -42,7 +42,7 @@ Step 10 : End.
 
 
 # Flowchart
-::: mermaid
+``` mermaid
 flowchart 
 id1([Start])-->id2[/File size/]
 id2-->id3[Transfer rate = 960]
@@ -58,4 +58,4 @@ id9-->id10([End])
 
 
 
-:::
+```
