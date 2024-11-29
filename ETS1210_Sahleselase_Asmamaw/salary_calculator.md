@@ -62,7 +62,7 @@ Step 17 : End
 
 
 # Flowchart
-::: mermaid
+``` mermaid
 flowchart 
 id1([Start])-->id2[Tax rate = 0.15        Pension rate = 0.05.]
 id2-->id3[/Employee Name/]
@@ -83,4 +83,4 @@ id16-->id17([End])
 id7--True-->id18[/Error message/]
 id18-->id17
 
-:::
+```
