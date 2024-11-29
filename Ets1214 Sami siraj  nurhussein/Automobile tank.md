@@ -1,38 +1,35 @@
-Problem Analysis
+# Problem Analysis
+## Inputs
+1. Fuel capacity of the automobile in gallons(g).
+2. Number of miles the automobile can travel per one gallon of fuel(mpg).
+## Output
+1. The total mile the automobile can travel based on its capacity and miles per gallon. 
+# Oprations
+1. Calculate the number of miles using the formula:
+### Number of miles =(Fuel capacity of the automobile/Number of miles per gallon)
 
-The program will multiply the capacity of the fuel tank by the miles per gallon to get the total distance the automobile can travel,
-the program will display the total distance that can be driven without refueling which is the "Output:"
+# Psudocode
+Step 1 : Start.
 
+Step 2 : Propmt the user to enter the fuel capacity of the automobile(g).
 
-pseudocode
+Step 3 : Propmt the user to enter number of miles the automobile can travel per one gallon of fuel(mpg).
+     
 
-Step 1: start
-
-Step 2: Declare variables:
+     
+ Step 4 : Number of miles =(Fuel capacity of the automobile/Number of miles per gallon).
  
-tankCapacity as float
-milesPerGallon as float
-totalDistance as float
+ Step 5 : Output the number of miles.
+ 
+ Step 6 : End.
 
-Step 3: Display the message:
 
-"Enter the capacity of the fuel tank (in gallons):"
-
-Step 4: Input tankCapacity.
-
-Step 5: Display the message:
-
-"Enter the miles per gallon (MPG):"
-
-Step 6: Input milesPerGallon.
-
-Step 7: Calculate totalDistance:
-
-Set totalDistance = tankCapacity * milesPerGallon.
-
-Step 8: Display the message:
-
-"The automobile can be driven for ", totalDistance, " miles without refueling."
-Step
-
-9: end.
+# Flowchart
+``` mermaid
+flowchart 
+id1([Start])-->id2[/Fuel capacity/]
+id2-->id3[/Miles per gallon/]
+id3-->id4["Number of miles =(Fuel capacity/ miles per gallon)"]
+id4-->id5[/Number of miles/]
+id5-->id6([End])
+```
