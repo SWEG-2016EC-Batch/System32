@@ -39,6 +39,7 @@ step 6: Display the time in days, hours, minutes, and seconds.
 step 7: End.
 
 # Flowchart
+
 ```mermaid
 flowchart TD
     id1([Start]) --> id2["Input: File size in bytes"]
