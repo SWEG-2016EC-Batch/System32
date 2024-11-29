@@ -3,6 +3,7 @@ The program computes the result of 𝑥^𝑦, where x is the base number and y i
 1. Inputs:
 Base number (𝑥): An integer, can be positive, negative, or zero.
 Power number (y): A non-negative integer.
+processing:
 The program calculates the product by multiplying the base x by itself y times. This is done using a for loop that iterates y times.
 Outputs:
 The result of 𝑥^𝑦 (i.e., the value of x raised to the power y).
