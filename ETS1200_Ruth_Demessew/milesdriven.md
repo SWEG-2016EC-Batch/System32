@@ -19,3 +19,13 @@ step 3: Prompt the user to input the mileage in miles per gallon (milesPerGallon
 step 4: Compute the distance using the formula: distance = gallon_capacity × milesPerGallon
 step 5: Display the result: "The car can travel [distance] miles without refueling."
 step 6: End.
+
+ Flowchart
+``` mermaid
+flowchart 
+id1([Start])-->id2[/fuel tank's capacity in gallons/]
+id2-->id3[/milage in miles per gallon/]
+id3-->id4["Distance =(gallon_capacity * milesPerGallon)"]
+id4-->id5[/Distance/]
+id5-->id6([End])
+```
