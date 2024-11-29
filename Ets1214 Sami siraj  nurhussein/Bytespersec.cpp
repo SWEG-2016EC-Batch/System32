@@ -1,9 +1,7 @@
 #include <iostream>
 #include <limits> 
 #include <iomanip> 
-
 using namespace std;
-
 int main() {
     const int CHAR_SIZE = 1; 
     const int TRANSMISSION_RATE = 960; 
