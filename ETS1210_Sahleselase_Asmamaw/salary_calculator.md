@@ -9,7 +9,7 @@
 2. Gross salary.
 3. Bonus payment.
 4. Employee name.
-# Operations
+## Operations
 1. Initialize the tax rete and pension rate.
 2. Check whether or not the enterd values are valid.
 3. Calculate the bonus payment by using the formula:
@@ -25,7 +25,7 @@
 8. Calcualte the net salary by using the formula:
     ### Net salary = Gross salary - (Pension + Tax)  
 
-# Psudocode
+# Pseudocode
 Step 1 : Start.
 
 Step 2 : Initialize: Tax rate = 0.15,Pension rate = 0.05.
