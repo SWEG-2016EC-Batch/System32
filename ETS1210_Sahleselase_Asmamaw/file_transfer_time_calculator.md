@@ -7,7 +7,7 @@ The problem requires the conversion of second into different time forms using th
 1. File size(in bytes).
 ## Output
 1. The time requred to transfer the file. 
-# Oprations
+# Operations
 1. Calculate the total time in seconds.
    #### Total seconds = File size in bytes/Transfer rate
 2. Calculate the amount of days.
