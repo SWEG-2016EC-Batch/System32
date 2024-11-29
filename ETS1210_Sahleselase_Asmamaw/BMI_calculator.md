@@ -34,7 +34,7 @@ Step 3 : For every individual from 1 to num :
 
 
 
-::: mermaid
+``` mermaid
 flowchart 
 id1([Start])-->id2[/input: Number of individuals/]
 id2-->id3{Counter < num}
@@ -54,4 +54,4 @@ id12--->id10
 id10-->id13([End])
 
 
-:::
+```
