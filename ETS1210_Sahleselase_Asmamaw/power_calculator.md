@@ -4,7 +4,7 @@
 2. The exponent(y).
 ## Output
 1. The base number raised to its exponent
-# Oprations
+# Operations
 1. Calculate the result when the base number is raised to the exponent using a for loop.where the base number is multiplied by its self and where the exponent decides the number of loops.
 ### Number of miles =(Fuel capacity of the automobile/Number of miles per gallon)
 
