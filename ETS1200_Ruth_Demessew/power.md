@@ -17,3 +17,19 @@ step 4: Initialize product = 1.
 step 5: If 𝑦 > 0, For each value i from 1 to y: Multiply product by x (i.e., accumulate the base x multiplied by itself y times).
 step 6: Display the result (product).
 step 7: End.
+
+```mermaid
+flowchart TD
+    id1([Start]) --> id2["Input: Base number (x)"]
+    id2 --> id3["Input: Power number (y)"]
+    id3 --> id4{"y < 0"}
+    id4 --True--> id5["Output: Error - Power must be non-negative"]
+    id5 --> id6([End])
+    id4 --False--> id7["Initialize product = 1"]
+    id7 --> id8["Initialize loop counter i = 1"]
+    id8 --> id9{"i <= y"}
+    id9 --True--> id10["product = product * x"]
+    id10 --> id11["Increment i by 1"]
+    id11 --> id9
+    id9 --False--> id12["Output: Result = product"]
+    id12 --> id13([End])
