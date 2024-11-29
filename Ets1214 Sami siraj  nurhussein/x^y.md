@@ -1,19 +1,19 @@
 Problem Analysis
-The provided code is a simple C++ program that calculates the power of a number. The program prompts the user to input two floating-point numbers, ( x ) and ( y ), and then computes ( x^y ) 
-(x raised to the power of y) using the pow function from the <cmath> library. Finally, it outputs the result.
+This is a simple C++ program that calculates the power of a number. The program asks the user to input two floating-point numbers, ( x ) and ( y ), then calculates ( x^y ) 
+(x raised to the power of y) using the pow function from the <cmath> library, and finally outputs the result.
 
 Key Components:
-Input: The program takes two floating-point numbers from the user: ( x ) (the base) and ( y ) (the exponent).
-Processing: It calculates the power using the pow function, which returns ( x ) raised to the power of ( y ).
+Input: The program prompts the user for two floating-point numbers:  x, the base, and  y, the exponent.
+Processing: The program computes the power using the pow function, which returns  x raised to the power of  y.
 
 pseudocode
 
-step1:Start
-step2:Declare variables to hold the values of ( x ), ( y ), and the result of the power calculation.
-step3Prompt the user to enter the value for ( x ).
-step4:Read the input value for ( x ).
-step5:Prompt the user to enter the value for ( y ).
-step6:Read the input value for ( y ).
-step6:Calculate ( x ) raised to the power of ( y ) using the pow function and store the result in the variable power.
-step7:Display the result to the user.
-step8:End
+step1:Begin
+step2:Declare variables to store values of x, y and result of power calculation.
+step3: Ask the user to input the value of ( x ).
+step4: Input value of ( x ).
+step5: Ask the user to input the value of ( y ).
+step6: Input value of ( y ).
+step6: Compute the value of ( x ) raised to the power of ( y ) using pow function and store it in the variable power.
+step7: Print the result to the user.
+step8: Stop
