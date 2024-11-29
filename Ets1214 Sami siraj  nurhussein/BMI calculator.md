@@ -1,50 +1,55 @@
-Problem Analysis
+# Problem Analysis
+## Inputs
+1. Number of individuals whose BMI needs to be calculated(num).
+2. The weight of each indidvidual in killograms(w) and their height in meters(h).
+## Output
+1. The BMI of each individual
+2. Their weight group. 
+# Oprations
+1. Calculate the BMI.
+2. Assign a weight group depending on the BMI. Under weight (BMI <= 18.5), healthy weight ( BMI >18.5 and <25) and over weight(BMI >=25).
+# Psudocode
+Step 1 : Start.
 
-The C++ program provided is intended to determine the Body Mass Index (BMI) for a certain number of persons depending on their 
-weight and height. The BMI is a standard statistical measure used to classify people into weight categories 
-(underweight, optimum weight, overweight, and obese) based on their weight with respect to their height.
+Step 2 : Propmt the user to enter the number of individuals (num).
 
-pseudocode
+Step 3 : For every individual from 1 to num :
+     
+     Step 3.1 : Prompt the user to enter their height(m).
+     Step 3.2 : Prompt the user to enter their weight(kg).
+     Step 3.3 : Calculate the BMI using the formula BMI = (weight/(height^2)).
+     Step 3.4 : Output the BMI.
+     Step 3.5 : find the weight group base on the BMI.
+         Step 3.5.1 : if BMI <= 18.5, weight group is under weight.
+         Step 3.5.2 : if  BMI >18.5 and <25, weight group is healthy weight.
+         Step 3.5.3 : if BMI >=25, weight group is overweight.
+     Step 3.6 :Output the weight group
+     
+ Step 4 : Out put the BMI and the weight group.
+ 
+ Step 5 : End.
 
-Step 1: Begin
 
-Step 2: Variable Declaration
+# Flowchart
 
-Declare variable w to store weight
-Declare variable h to store height
-Declare a variable BMI for Body Mass Index
-Declare a variable counter for the number of people
-Step 3: Input Number of People
 
-Prompt the user to enter the number of people measuring their BMI
-Store the input value in counter
-Step 4: Loop Through Each Person
 
-For each person from 1 to counter, do the following:
+``` mermaid
+flowchart 
+id1([Start])-->id2[/input: Number of individuals/]
+id2-->id3{Counter < num}
 
-Step 4.1: Input Weight
+id3-->id4[/input: Weight/]
+id4-->id5[/input: Height/]
+id5-->id6["BMI=Weight/(Height*Height)"] 
+id6-->id14[/Output: BMI/]
+id14-->id7{BMI<=18.5}
+id7--False--->id8{18.5 < BMI < 25}
+id8--False-->id9[Weight group = Over weight]
+id9--->id10[/Output: Weight group/]
+id7--True--->id11[Weight group = Under weight]
+id11--->id10
+id8--True---->id12[Weight group = Healthy weight]
+id12--->id10
+id10-->id13([End])
 
-Prompt the user to input their weight in kilograms for the current person
-Store the input value in w
-
-Step 4.2: Input Height
-
-Ask the user to enter their height in meters for the active person
-Store the input value in h
-
-Step 4.3: Calculate BMI
-
-Calculate the BMI by using the formula: BMI = w / (h * h)
-
-Step 4.4: Output BMI
-
-Show the calculated BMI to the user
-
-Step 4.5: Determine Weight Category
-
-If the BMI is less than or equal to 18.5, display "you are underweight"
-Else if BMI is greater than 18.5 and less than or equal to 24.9, print out "you are at optimum weight"
-Else if BMI is greater than 24.9 and less than or equal to 29.9, print out "you are overweight"
-Else, print out "you are obese"
-
-Step 5: Stop
