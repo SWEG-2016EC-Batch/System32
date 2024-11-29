@@ -26,18 +26,23 @@ BEGIN
     DECLARE timeSeconds AS DOUBLE
     
 pseudocode
+
 step 1: start
+
 Step 2: get the user input
     PRINT "Enter the file size in bytes: "
     READ fileSize
+
 
    Step 3: Input validation
     IF fileSize < 0 THEN
         PRINT "File size cannot be negative."
         EXIT
 
+
 Step 4: Determine the number of characters in the file
     fileSizeCharacters = fileSize / CHAR_SIZE
+
     
 Step 5: Compute the time to transmit the file
 timeSeconds = fileSizeCharacters / TRANSMISSION_RATE
