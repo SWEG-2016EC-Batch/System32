@@ -35,3 +35,29 @@ step 8: Calculate Deductions:
 step 9: Calculate Net Salary: Subtract pension_deduction and tax_deduction from gross_salary and store the result in net_salary.
 step 10: Display the employee_name, gross_salary, net_salary, and bouns_payment.
 step 11: End
+
+```mermaid
+flowchart TD
+    id1([Start]) --> id2["Input: Employee name"]
+    id2 --> id3["Input: Base salary in birr"]
+    id3 --> id4{"Base salary <= 0"}
+    id4 --True--> id5["Output: Error - Base salary must be greater than zero"]
+    id5 --> id6([End])
+    id4 --False--> id7["Input: Weekly working hours"]
+    id7 --> id8{"Weekly working hours <= 0"}
+    id8 --True--> id9["Output: Error - Weekly working hours must be greater than zero"]
+    id9 --> id6
+    id8 --False--> id10["Input: Bonus rate per hour in birr"]
+    id10 --> id11{"Bonus rate <= 0"}
+    id11 --True--> id12["Output: Error - Bonus rate must be greater than zero"]
+    id12 --> id6
+    id11 --False--> id13["Calculate bonus payment = weekly working hours * bonus rate"]
+    id13 --> id14["Calculate gross salary = base salary + bonus payment"]
+    id14 --> id15["Calculate pension deduction = gross salary * 0.05"]
+    id15 --> id16["Calculate tax deduction = gross salary * 0.15"]
+    id16 --> id17["Calculate net salary = gross salary - (pension deduction + tax deduction)"]
+    id17 --> id18["Output: Gross salary, net salary, and bonus payment"]
+    id18 --> id19([End])
+
+
+```
