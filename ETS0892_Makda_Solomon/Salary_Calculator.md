@@ -104,10 +104,33 @@ net_salary = gross_salary - (pension + tax)
 
 OUTPUT employeeName + "'s gross salary is: $" + gross_salary
 
-OUTPUT employeeName + "'s bonus payment is: $" + bonus_paymen
-t
+OUTPUT employeeName + "'s bonus payment is: $" + bonus_payment
+
 OUTPUT employeeName + "'s net salary is: $" + net_salary
 
 
 END
 
+# Flowchart
+``` mermaid
+flowchart 
+id1([Start])-->id2[Tax rate = 0.15        Pension rate = 0.05.]
+id2-->id3[/Employee Name/]
+id3-->id4[/Base salary/]
+id4-->id5[/Weekly hours worked/]
+id5-->id6[/Bonus rate/]
+id6-->id7{Base salary <0 or      Weekly hours worked <0 or   Bonus rate per hour <0 or The imputs are invalid}
+id7--False-->id8[Bonus payment = Weekly hours worked * Bonus rate.]
+id8-->id9[Gross salary = Base salary + Bonus payment ]
+id9-->id10[Tax = Gross salary * Tax rate]
+id10-->id11[Pension = Gross salary * Pension rate]
+id11-->id12["Net salary = Gross salary - (Pension + Tax)"]
+id12-->id13[/Employee Name /]
+id13-->id14[/Gross salary /]
+id14-->id15[/Bonus payment /]
+id15-->id16[/Net salary /]
+id16-->id17([End])
+id7--True-->id18[/Error message/]
+id18-->id17
+
+```
