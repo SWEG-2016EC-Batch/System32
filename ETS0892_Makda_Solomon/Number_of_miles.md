@@ -33,17 +33,19 @@
 
 ## Pseudocode
 START
-    DECLARE capacityGallons AS FLOAT
-    DECLARE milesPerGallon AS FLOAT
+DECLARE capacityGallons AS FLOAT
+DECLARE milesPerGallon AS FLOAT
+DECLARE totalMiles AS FLOAT
 
-    PROMPT "Enter the capacity of the fuel tank in gallons:"
-    READ capacityGallons
 
-    PROMPT "Enter the miles per gallon (MPG):"
-    READ milesPerGallon
 
-    totalMiles = capacityGallons * milesPerGallon
+PROMPT "Enter the capacity of the fuel tank in gallons:"
+READ capacityGallons
 
-    PRINT "The automobile can be driven", totalMiles, "miles without refueling."
+PROMPT "Enter the miles per gallon (MPG):"
+READ milesPerGallon
 
+totalMiles = capacityGallons * milesPerGallon
+
+PRINT "The automobile can be driven", totalMiles, "miles without refueling."
 END
