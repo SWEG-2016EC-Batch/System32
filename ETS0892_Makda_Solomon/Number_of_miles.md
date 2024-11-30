@@ -33,6 +33,9 @@
 
 ## Pseudocode
 START
+    
+    
+    
     DECLARE capacityGallons AS FLOAT
 
     
@@ -49,3 +52,13 @@ START
     PRINT "The automobile can be driven", totalMiles, "miles without refueling."
 
 END
+
+# Flowchart
+``` mermaid
+flowchart 
+id1([Start])-->id2[/Fuel capacity/]
+id2-->id3[/Miles per gallon/]
+id3-->id4["Number of miles =(Fuel capacity/ miles per gallon)"]
+id4-->id5[/Number of miles/]
+id5-->id6([End])
+```
