@@ -1,27 +1,27 @@
 # Problem Analysis
 ## Inputs
-1. The base number(x).
-2. The exponent(y).
+1. The `base number(x)`.
+2. The `exponent(y)`.
 ## Output
-1. The base number raised to its exponent
+1. The `base number` raised to its `exponent`.
 ## Operations
-1. Calculate the result when the base number is raised to the exponent using a for loop.where the base number is multiplied by its self and where the exponent decides the number of loops.
+1. Calculate the result when the `base number` is raised to the `exponent` using a for loop.where the `base number` is multiplied by its self and where the `exponent` decides the number of loops.
 ### Number of miles =(Fuel capacity of the automobile/Number of miles per gallon)
 
 # Pseudocode
 Step 1 : Start.
 
-Step 2 : Initialize result = 1.
+Step 2 : Initialize `result = 1`.
 
-Step 3 : Propmt the user to enter the the base number(x).
+Step 3 : Propmt the user to enter the the `base number(x)`.
 
-Step 4 : Propmt the user to enter the exponent(y).
+Step 4 : Propmt the user to enter the `exponent(y)`.
 
-Step 5 : if y<0, out put an error message.
+Step 5 : if `y<0`, out put an `error message`.
 
-Step 6 : if y>=0, for each value of the from 1 to y: result*=x.
+Step 6 : if `y>=0`, for each value of the `from 1 to y: result*=x`.
  
-Step 7 : Output result.
+Step 7 : Output `result`.
 
 Step 8 : End.
 
