@@ -47,7 +47,7 @@ id14-->id7{BMI<=18.5}
 id7--False--->id8{18.5 < BMI < 25}
 id8--False-->id9[Weight group = Over weight]
 id9--->id10[/Output: Weight group/]
-id7--True--->id11[Weight group = Under weight]
+id7--True------->id11[Weight group = Under weight]
 id11--->id10
 id8--True---->id12[Weight group = Healthy weight]
 id12--->id10
