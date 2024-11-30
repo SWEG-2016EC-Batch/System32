@@ -1,7 +1,7 @@
 # Problem Analysis
 ## Inputs
-1. Fuel capacity of the automobile in gallons(g).
-2. Number of miles the automobile can travel per one gallon of fuel(mpg).
+1. Fuel capacity of the automobile in gallons`(g)`.
+2. Number of miles the automobile can travel per one gallon of fuel`(mpg)`.
 ## Output
 1. The total mile the automobile can travel based on its capacity and miles per gallon. 
 ## Operations
@@ -11,15 +11,15 @@
 # Pseudocode
 Step 1 : Start.
 
-Step 2 : Propmt the user to enter the fuel capacity of the automobile(g).
+Step 2 : Propmt the user to enter the fuel capacity of the automobile `g)`.
 
-Step 3 : Propmt the user to enter number of miles the automobile can travel per one gallon of fuel(mpg).
+Step 3 : Propmt the user to enter number of miles the automobile can travel per one gallon of fuel`(mpg)`.
      
 
      
- Step 4 : Number of miles = Fuel capacity * miles per gallon.
+ Step 4 : `Number of miles = Fuel capacity * miles per gallon`.
  
- Step 5 : Output the number of miles.
+ Step 5 : Output the `number of miles`.
  
  Step 6 : End.
 
