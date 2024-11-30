@@ -51,13 +51,19 @@ START
 END
 
 # Flowchart
-```mermaid
-flowchart TD
-    A[Start] --> B[Initialize x, y, result]
-    B --> C[Prompt user for value of x]
-    C --> D[Read value of x]
-    D --> E[Prompt user for value of y]
-    E --> F[Read value of y]
-    F --> G[Calculate result = pow(x, y)]
-    G --> H[Display result]
-    H --> I[End]
+
+``` mermaid
+flowchart 
+id1([Start])-->id2[Result=1]
+id2-->id3[/"Base number(x)"/]
+id3-->id4[/"Exponent(y)"/]
+id4-->id5{Exponent >= 0}
+id5--True--->id6{Counter< Exponent}
+id6--True--->id7["Result*=Base number(x)"]
+id7--->id12[counter++]
+id12-->id6
+id6--False----->id10[/Result/]
+id5--False-->id9[/Error message/]
+id9-->id11([End])
+id10-->id11
+```
