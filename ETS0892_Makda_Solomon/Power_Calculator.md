@@ -37,12 +37,17 @@ OUTPUT "Enter the exponent number:"
 INPUT y
 
 IF y < 0 OR input fails THEN
+
 OUTPUT "Please enter a positive integer for the exponent"
 ELSE
+
 FOR i FROM 0 TO y - 1 DO
+
 result = result * x
 END FOR
+
 OUTPUT x + " raised to " + y + " is " + result
+
 ENDIF
 
 END
