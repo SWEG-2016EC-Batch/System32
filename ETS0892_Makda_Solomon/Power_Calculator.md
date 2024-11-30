@@ -29,3 +29,23 @@
    \]
 6. Display the result using the message: "x raised to the power of y is: result."
 7. End the program.
+## Pseudocode
+START
+   
+    DECLARE x AS DOUBLE
+    
+    DECLARE y AS DOUBLE
+    
+    DECLARE result AS DOUBLE
+
+    PROMPT "Enter the value of x:"
+    READ x
+
+    PROMPT "Enter the value of y:"
+    READ y
+
+    result = pow(x, y)
+
+    PRINT x, "raised to the power of", y, "is:", result
+
+END
