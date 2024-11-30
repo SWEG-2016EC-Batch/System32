@@ -1,33 +1,45 @@
-# Problem Analysis
+# Body Mass Index (BMI) Calculator
+
+## Problem Analysis
 **Goal**: To create a program that calculates the Body Mass Index (BMI) of multiple people and classifies their weight status.
-## Inputs:
-1.The number of people that there BMI will be calculated.
-2.For each person:
-  Weight (in kilograms)
-  Height (in meters)
-## **Processing**:
-1.Calculate BMI using the formula: BMI = weight / (height * height)
-2.Compare the calculated BMI against predefined ranges to determine the weight category:
-BMI < 18.5: Underweight
-18.5 ≤ BMI ≤ 24.9: Normal weight
-25 ≤ BMI < 29.9: Overweight
-BMI ≥ 30: Obese
-## Outputs:
-Display the BMI and weight category for each individual.
-# Algorithm
-Step1:Start the program.
-Step2:Initialize a loop to process multiple persons.
-Step3:For each person:
-	   Step 3.1:Prompt the user to enter weight (in kg).
-	  Step 3.2:Prompt the user to enter height (in meters).
-Step4:Calculate the BMI using the formula: BMI=weight/(height×height)
-Step5:Determine weight status:
-	   If BMI < 18.5, classify as "Underweight".
-	   If 18.5 ≤ BMI < 24.9, classify as "Normal weight".
-	   If BMI ≥ 25, classify as "Overweight".
-	   If BMI ≥ 30, display: "You are obese!"
-Step6:Display the BMI and the weight status.
-Step7:End.
+
+### Inputs
+- The number of people for whom the BMI will be calculated.
+- For each person:
+  - Weight (in kilograms)
+  - Height (in meters)
+
+### Processing
+1. Calculate BMI using the formula:
+   \[
+   \text{BMI} = \frac{\text{weight}}{\text{height} \times \text{height}}
+   \]
+2. Compare the calculated BMI against predefined ranges to determine the weight category:
+   - BMI < 18.5: Underweight
+   - 18.5 ≤ BMI ≤ 24.9: Healthy weight
+   - 25 ≤ BMI < 29.9: Overweight
+   - BMI ≥ 30: Obese
+
+### Outputs
+- Display the BMI and weight category for each individual.
+
+## Algorithm
+1. Start the program.
+2. Initialize a loop to process multiple persons.
+3. For each person:
+   - Prompt the user to enter weight (in kg).
+   - Prompt the user to enter height (in meters).
+4. Calculate the BMI using the formula: 
+   \[
+   \text{BMI} = \frac{\text{weight}}{\text{height} \times \text{height}}
+   \]
+5. Determine weight status:
+   - If BMI < 18.5, classify as "Underweight".
+   - If 18.5 ≤ BMI < 24.9, classify as "Normal weight".
+   - If 25 ≤ BMI < 29.9, classify as "Overweight".
+   - If BMI ≥ 30, display: "You are obese!"
+6. Display the BMI and the weight status.
+7. End.
 # Pseudocode
 Start
     PROMPT "Enter the number of people for BMI calculation:"
