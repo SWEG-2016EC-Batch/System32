@@ -12,7 +12,7 @@
 2. Prompt the user to enter the miles per gallon (MPG).
 3. Calculate the total miles that can be driven using the formula:
    \[
-   \text{Total Miles} = \text{Capacity Gallons} \times \text{Miles Per Gallon}
+totalMiles = capacityGallons * milesPerGallon
    \]
 
 ### Outputs
@@ -26,7 +26,7 @@
 5. Prompt the user to enter the miles per gallon and read `milesPerGallon`.
 6. Calculate `totalMiles` using the formula: 
    \[
-   \text{totalMiles} = \text{capacityGallons} \times \text{milesPerGallon}
+   totalMiles = capacityGallons * milesPerGallon
    \]
 7. Display the total miles using the message: "The automobile can be driven X miles without refueling."
 8. End the program.
