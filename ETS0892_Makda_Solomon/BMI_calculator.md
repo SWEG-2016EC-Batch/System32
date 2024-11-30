@@ -1,11 +1,11 @@
 # Problem Analysis
 **Goal**: To create a program that calculates the Body Mass Index (BMI) of multiple people and classifies their weight status.
-1.**Inputs**:
+## **Inputs**:
 The number of people that there BMI will be calculated.
 For each person:
 Weight (in kilograms)
 Height (in meters)
-2.**Processing**:
+## **Processing**:
 Calculate BMI using the formula:
 BMI = weight / (height * height)
 Compare the calculated BMI against predefined ranges to determine the weight category:
@@ -13,22 +13,22 @@ BMI < 18.5: Underweight
 18.5 ≤ BMI ≤ 24.9: Healthy weight
 25 ≤ BMI < 29.9: Overweight
 BMI ≥ 30: Obese
-3.**Outputs**:
+## **Outputs**:
 Display the BMI and weight category for each individual.
 # Algorithm
-	Start the program.
-	Initialize a loop to process multiple persons.
-	For each person:
-	Prompt the user to enter weight (in kg).
-	Prompt the user to enter height (in meters).
-	Calculate the BMI using the formula: BMI=weight/(height×height)
-	Determine weight status:
-	If BMI < 18.5, classify as "Underweight".
-	If 18.5 ≤ BMI < 24.9, classify as "Normal weight".
-	If BMI ≥ 25, classify as "Overweight".
-	If BMI ≥ 30, display: "You are obese!"
-	Display the BMI and the weight status.
-	End.
+Step1:Start the program.
+Step2:Initialize a loop to process multiple persons.
+Step3:For each person:
+	    Prompt the user to enter weight (in kg).
+	   Prompt the user to enter height (in meters).
+Step4:Calculate the BMI using the formula: BMI=weight/(height×height)
+Step5:Determine weight status:
+	   If BMI < 18.5, classify as "Underweight".
+	   If 18.5 ≤ BMI < 24.9, classify as "Normal weight".
+	   If BMI ≥ 25, classify as "Overweight".
+	   If BMI ≥ 30, display: "You are obese!"
+Step6:Display the BMI and the weight status.
+Step7:End.
 # Pseudocode
 Start
     PROMPT "Enter the number of people for BMI calculation:"
@@ -59,6 +59,31 @@ Start
 
     RETURN 0
 END
+# Flowchart
+flowchart 
+id1([Start])-->id2[/input: Number of individuals/]
+id2-->id3{Counter < num}
+
+id3-->id4[/input: Weight/]
+id4-->id5[/input: Height/]
+id5-->id6["BMI=Weight/(Height*Height)"] 
+id6-->id14[/Output: BMI/]
+id14-->id7{BMI<=18.5}
+id7--False--->id8{18.5 < BMI < 25}
+id8--False-->id9[Weight group = Over weight]
+id9--->id10[/Output: Weight group/]
+id7--True--->id11[Weight group = Under weight]
+id11--->id10
+id8--True---->id12[Weight group = Healthy weight]
+id12--->id10
+id10-->id13([End])
+
+
+
+
+
+
+
 
 
 
