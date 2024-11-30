@@ -1,26 +1,25 @@
 # Problem Analysis
 **Goal**: To create a program that calculates the Body Mass Index (BMI) of multiple people and classifies their weight status.
-## **Inputs**:
-The number of people that there BMI will be calculated.
-For each person:
-Weight (in kilograms)
-Height (in meters)
+## Inputs:
+1.The number of people that there BMI will be calculated.
+2.For each person:
+  Weight (in kilograms)
+  Height (in meters)
 ## **Processing**:
-Calculate BMI using the formula:
-BMI = weight / (height * height)
-Compare the calculated BMI against predefined ranges to determine the weight category:
+1.Calculate BMI using the formula: BMI = weight / (height * height)
+2.Compare the calculated BMI against predefined ranges to determine the weight category:
 BMI < 18.5: Underweight
-18.5 ≤ BMI ≤ 24.9: Healthy weight
+18.5 ≤ BMI ≤ 24.9: Normal weight
 25 ≤ BMI < 29.9: Overweight
 BMI ≥ 30: Obese
-## **Outputs**:
+## Outputs:
 Display the BMI and weight category for each individual.
 # Algorithm
 Step1:Start the program.
 Step2:Initialize a loop to process multiple persons.
 Step3:For each person:
-	    Prompt the user to enter weight (in kg).
-	   Prompt the user to enter height (in meters).
+	   Step 3.1:Prompt the user to enter weight (in kg).
+	  Step 3.2:Prompt the user to enter height (in meters).
 Step4:Calculate the BMI using the formula: BMI=weight/(height×height)
 Step5:Determine weight status:
 	   If BMI < 18.5, classify as "Underweight".
