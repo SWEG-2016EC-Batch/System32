@@ -54,16 +54,19 @@ END
 
 ```mermaid
 flowchart TD
-    id1([Start]) --> id2[Result = 1]
-    id2 --> id3[/"Base number (x)"/]
-    id3 --> id4[/"Exponent (y)"/]
-    id4 --> id5{Is Exponent >= 0?}
-    id5 -- True --> id6{Counter < Exponent}
-    id6 -- True --> id7["Result *= Base number (x)"]
-    id7 --> id8[counter++]  // Increment counter
-    id8 --> id6
-    id6 -- False --> id10[/Result/]
-    id5 -- False --> id9[/Error: Exponent must be non-negative/]
-    id9 --> id11([End])
-    id10 --> id11
+    id1([Start]) --> id2["Prompt: Enter Base number (x)"]
+    id2 --> id3["Read Base number (x)"]
+    id3 --> id4["Prompt: Enter Exponent (y)"]
+    id4 --> id5["Read Exponent (y)"]
+    id5 --> id6{Exponent (y) >= 0?}
+    id6 -- True --> id7["Result = 1"]
+    id7 --> id8["Counter = 0"]
+    id8 --> id9{Counter < Exponent (y)?}
+    id9 -- True --> id10["Result *= Base number (x)"]
+    id10 --> id11["Counter++"]
+    id11 --> id9
+    id9 -- False --> id12["Display Result"]
+    id12 --> id14([End])
+    id6 -- False --> id13["Display Error: Negative Exponent Not Supported"]
+    id13 --> id14
 ```
