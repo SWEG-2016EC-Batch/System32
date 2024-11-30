@@ -20,13 +20,18 @@
 
 ## Algorithm
 1. Start the program.
-2. Initialize variables for fuel tank capacity and miles per gallon.
-3. Prompt the user to enter the fuel tank capacity.
-4. Prompt the user to enter the miles per gallon.
-5. Calculate the total miles that can be driven.
-6. Display the total miles.
-7. End.
-##Pseudocode
+2. Initialize a variable for fuel tank capacity (`capacityGallons`).
+3. Initialize a variable for miles per gallon (`milesPerGallon`).
+4. Prompt the user to enter the fuel tank capacity and read `capacityGallons`.
+5. Prompt the user to enter the miles per gallon and read `milesPerGallon`.
+6. Calculate `totalMiles` using the formula: 
+   \[
+   \text{totalMiles} = \text{capacityGallons} \times \text{milesPerGallon}
+   \]
+7. Display the total miles using the message: "The automobile can be driven X miles without refueling."
+8. End the program.
+
+## Pseudocode
 START
     DECLARE capacityGallons AS FLOAT
     DECLARE milesPerGallon AS FLOAT
