@@ -51,22 +51,12 @@ START
 END
 
 # Flowchart
-
 ```mermaid
 flowchart TD
-    id1([Start]) --> id2["Prompt: Enter Base number (x)"]
-    id2 --> id3["Read Base number (x)"]
-    id3 --> id4["Prompt: Enter Exponent (y)"]
-    id4 --> id5["Read Exponent (y)"]
-    id5 --> id6{Exponent (y) >= 0?}
-    id6 -- True --> id7["Result = 1"]
-    id7 --> id8["Counter = 0"]
-    id8 --> id9{Counter < Exponent (y)?}
-    id9 -- True --> id10["Result *= Base number (x)"]
-    id10 --> id11["Counter++"]
-    id11 --> id9
-    id9 -- False --> id12["Display Result"]
-    id12 --> id14([End])
-    id6 -- False --> id13["Display Error: Negative Exponent Not Supported"]
-    id13 --> id14
-```
+    Start([Start]) --> InputX["Prompt: Enter the value of x"]
+    InputX --> ReadX["Read input for x"]
+    ReadX --> InputY["Prompt: Enter the value of y"]
+    InputY --> ReadY["Read input for y"]
+    ReadY --> Calculate["Calculate: result = pow(x, y)"]
+    Calculate --> Output["Output: Display x raised to the power of y"]
+    Output --> End([End])
