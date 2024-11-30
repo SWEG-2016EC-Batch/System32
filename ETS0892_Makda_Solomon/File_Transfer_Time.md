@@ -61,3 +61,22 @@ seconds = total_seconds % 60
 OUTPUT "The file transfer will take " + days + " day(s), " + hours + " hour(s), " + minutes + " minute(s), and " + seconds + " second(s)."
 
 END
+
+# Flowchart
+``` mermaid
+flowchart 
+id1([Start])-->id2[/File size/]
+id2-->id3[Transfer rate = 960]
+id3-->id4[Total seconds = File size/Transfer rate]
+id4-->id5[Days = Total seconds/86400]
+id5-->id6["Hours = (Total seconds%86400)/3600"]
+id6-->id7["Minutes = ((Total seconds%86400)%3600)/60"]
+id7-->id8["Seconds = ((Total seconds%86400)%3600)%60"]
+id8-->id9[/Total time/]
+id9-->id10([End])
+
+
+
+
+
+```
