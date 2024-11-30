@@ -39,7 +39,7 @@ flowchart
 id1([Start])-->id2[/input: Number of individuals/]
 id2-->id3{Counter < num}
 
-id3-->id4[/input: Weight/]
+id3--True-->id4[/input: Weight/]
 id4-->id5[/input: Height/]
 id5-->id6["BMI=Weight/(Height*Height)"] 
 id6-->id14[/Output: BMI/]
@@ -52,6 +52,6 @@ id11--->id10
 id8--True---->id12[Weight group = Healthy weight]
 id12--->id10
 id10-->id13([End])
-
+id3--False--id13
 
 ```
