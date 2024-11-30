@@ -15,7 +15,7 @@
    - Display the result of the base raised to the exponent.
 
 ## Algorithm
-1. **Start** the program.
+Step 1 :1. **Start** the program.
 2. **Declare** variables for the base number (`x`), exponent (`y`), and result (initialized to 1).
 3. **Prompt** the user to enter the base number and read the value into `x`.
 4. **Prompt** the user to enter the exponent and read the value into `y`.
