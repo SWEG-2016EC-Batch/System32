@@ -44,15 +44,15 @@ id4-->id5[/input: Height/]
 id5-->id6["BMI=Weight/(Height*Height)"] 
 id6-->id15[/Output: BMI/]
 id15-->id7{BMI<=18.5}
-id7--False--->id8{18.5 < BMI < 25}
+id7--False-->id8{18.5 < BMI < 25}
 id8--False-->id9[Weight group = Over weight]
 id9--->id10[/Output: Weight group/]
-id7--True------->id11[Weight group = Under weight]
+id7--True-->id11[Weight group = Under weight]
 id11--->id10
-id8--True---->id12[Weight group = Healthy weight]
+id8--True-->id12[Weight group = Healthy weight]
 id12--->id10
 
-id3--False--------------->id13([End])
+id3--False-->id13([End])
 id10-->id14[Counter++]
 id14-->id3
 ```
