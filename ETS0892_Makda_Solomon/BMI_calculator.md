@@ -12,11 +12,11 @@
 ### Processing
 1. Calculate BMI using the formula:
    \[
-   \text{BMI} = \frac{\text{weight}}{\text{height} \times \text{height}}
+   BMI=weight/(height×height)
    \]
-2. Compare the calculated BMI against predefined ranges to determine the weight category:
+3. Compare the calculated BMI against predefined ranges to determine the weight category:
    - BMI < 18.5: Underweight
-   - 18.5 ≤ BMI ≤ 24.9: Healthy weight
+   - 18.5 ≤ BMI ≤ 24.9: Normal weight
    - 25 ≤ BMI < 29.9: Overweight
    - BMI ≥ 30: Obese
 
@@ -31,7 +31,7 @@
    - Prompt the user to enter height (in meters).
 4. Calculate the BMI using the formula: 
    \[
-   \text{BMI} = \frac{\text{weight}}{\text{height} \times \text{height}}
+   BMI=weight/(height×height)
    \]
 5. Determine weight status:
    - If BMI < 18.5, classify as "Underweight".
