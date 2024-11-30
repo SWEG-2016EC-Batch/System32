@@ -1,8 +1,8 @@
 # Problem Analysis
 The problem requires the conversion of second into different time forms using the following relation.
-#### 1 Day = 86400 Seconds
-#### 1 Hour = 3600 Seconds
-#### 1 Minute = 60 Seconds
+`#### 1 Day = 86400 Seconds`
+`#### 1 Hour = 3600 Seconds`
+`#### 1 Minute = 60 Seconds`
 ## Inputs
 1. File size(in bytes).
 ## Output
