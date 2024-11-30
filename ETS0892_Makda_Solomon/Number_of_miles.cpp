@@ -14,7 +14,7 @@ int main() {
     cout << "Enter the miles per gallon (MPG): ";
     cin >> milesPerGallon;
 
-    double totalMiles = capacityGallons * milesPerGallon;
+    float totalMiles = capacityGallons * milesPerGallon;
 
     
     cout << "The automobile can be driven " << totalMiles << " miles without refueling." << endl;
