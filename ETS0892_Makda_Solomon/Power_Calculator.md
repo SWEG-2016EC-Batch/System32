@@ -12,7 +12,7 @@
 2. Prompt the user to enter the value of \( y \).
 3. Calculate the result of \( x^y \) using the formula:
    \[
-   \text{result} = x^y
+   power = x^y
    \]
 
 ### Outputs
@@ -25,7 +25,7 @@
 4. Prompt the user to enter the value of \( y \) and read the input.
 5. Calculate the result using the formula:
    \[
-   \text{result} = \text{pow}(x, y)
+   power = x^y
    \]
 6. Display the result using the message: "x raised to the power of y is: result."
 7. End the program.
