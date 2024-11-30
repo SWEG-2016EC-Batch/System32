@@ -60,23 +60,24 @@ Start
     RETURN 0
 END
 # Flowchart
+# Flowchart
+``` mermaid
 flowchart 
-id1([Start])-->id2[/input: Number of individuals/]
-id2-->id3{Counter < num}
+id1([Start])-->id2[/File size/]
+id2-->id3[Transfer rate = 960]
+id3-->id4[Total seconds = File size/Transfer rate]
+id4-->id5[Days = Total seconds/86400]
+id5-->id6["Hours = (Total seconds%86400)/3600"]
+id6-->id7["Minutes = ((Total seconds%86400)%3600)/60"]
+id7-->id8["Seconds = ((Total seconds%86400)%3600)%60"]
+id8-->id9[/Total time/]
+id9-->id10([End])
 
-id3-->id4[/input: Weight/]
-id4-->id5[/input: Height/]
-id5-->id6["BMI=Weight/(Height*Height)"] 
-id6-->id14[/Output: BMI/]
-id14-->id7{BMI<=18.5}
-id7--False--->id8{18.5 < BMI < 25}
-id8--False-->id9[Weight group = Over weight]
-id9--->id10[/Output: Weight group/]
-id7--True--->id11[Weight group = Under weight]
-id11--->id10
-id8--True---->id12[Weight group = Healthy weight]
-id12--->id10
-id10-->id13([End])
+
+
+
+
+```
 
 
 
