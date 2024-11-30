@@ -3,50 +3,47 @@
 ## Problem Analysis
 **Goal**: To create a program that calculates the result of the expression \( x^y \) where the values of \( x \) and \( y \) are entered by the user.
 
-### Inputs
-- Value of \( x \).
-- Value of \( y \).
 
-### Processing
-1. Prompt the user to enter the value of \( x \).
-2. Prompt the user to enter the value of \( y \).
-3. Calculate the result of \( x^y \) using the formula:
-   \[
-   power = x^y
-   \]
+1. **Input**:
+   - Base number (integer).
+   - Exponent (non-negative integer).
 
-### Outputs
-- Display the result of \( x^y \).
+2. **Calculations**:
+   - The program will multiply the base by itself for the number of times specified by the exponent.
+
+3. **Output**:
+   - Display the result of the base raised to the exponent.
 
 ## Algorithm
-1. Start the program.
-2. Initialize variables for \( x \), \( y \), and the result.
-3. Prompt the user to enter the value of \( x \) and read the input.
-4. Prompt the user to enter the value of \( y \) and read the input.
-5. Calculate the result using the formula:
-   \[
-   power = x^y
-   \]
-6. Display the result using the message: "x raised to the power of y is: result."
-7. End the program.
+1. **Start** the program.
+2. **Declare** variables for the base number (`x`), exponent (`y`), and result (initialized to 1).
+3. **Prompt** the user to enter the base number and read the value into `x`.
+4. **Prompt** the user to enter the exponent and read the value into `y`.
+5. **Validate** the input for the exponent:
+   - If the input fails or `y` is negative, display an error message and terminate the program.
+6. **Calculate** the exponentiation using a loop:
+   - For `i` from 0 to `y - 1`, multiply `result` by `x`.
+7. **Display** the result of `x` raised to `y`.
+8. **End** the program.
 ## Pseudocode
 START
-   
-    DECLARE x AS DOUBLE
-    
-    DECLARE y AS DOUBLE
-    
-    DECLARE result AS DOUBLE
 
-    PROMPT "Enter the value of x:"
-    READ x
+DECLARE x, y, result = 1
 
-    PROMPT "Enter the value of y:"
-    READ y
+OUTPUT "Enter the base number:"
+INPUT x
 
-    result = pow(x, y)
+OUTPUT "Enter the exponent number:"
+INPUT y
 
-    PRINT x, "raised to the power of", y, "is:", result
+IF y < 0 OR input fails THEN
+OUTPUT "Please enter a positive integer for the exponent"
+ELSE
+FOR i FROM 0 TO y - 1 DO
+result = result * x
+END FOR
+OUTPUT x + " raised to " + y + " is " + result
+ENDIF
 
 END
 
