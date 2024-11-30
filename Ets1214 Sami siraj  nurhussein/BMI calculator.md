@@ -9,30 +9,28 @@
 1. Calculate the BMI.
 2. Assign a weight group depending on the BMI. Under weight (BMI <= 18.5), healthy weight ( BMI >18.5 and <25) and over weight(BMI >=25).
 # Psudocode
-Step 1 : Start.
+Step 1: Start.
 
-Step 2 : Propmt the user to enter the number of individuals (num).
+Step 2: Prompt the user to enter the number of individuals (num).
 
-Step 3 : For every individual from 1 to num :
+Step 3: For every individual from 1 to num :
      
-     Step 3.1 : Prompt the user to enter their height(m).
-     Step 3.2 : Prompt the user to enter their weight(kg).
-     Step 3.3 : Calculate the BMI using the formula BMI = (weight/(height^2)).
-     Step 3.4 : Output the BMI.
-     Step 3.5 : find the weight group base on the BMI.
-         Step 3.5.1 : if BMI <= 18.5, weight group is under weight.
-         Step 3.5.2 : if  BMI >18.5 and <25, weight group is healthy weight.
-         Step 3.5.3 : if BMI >=25, weight group is overweight.
-     Step 3.6 :Output the weight group
+     Step 3.1: Prompt the user to enter their height(m).
+     Step 3.2: Prompt the user to enter their weight(kg).
+     Step 3.3: Calculate the BMI using the formula BMI = (weight/(height^2)).
+     Step 3.4: Output the BMI.
+     Step 3.5: find the weight group base on the BMI.
+         Step 3.5.1: if BMI <= 18.5, the weight group is underweight.
+         Step 3.5.2: if  BMI >18.5 and <25, the weight group is healthy.
+         Step 3.5.3: if BMI >=25, the weight group is overweight.
+     Step 3.6:Output the weight group
      
- Step 4 : Out put the BMI and the weight group.
+ Step 4: Output the BMI and the weight group.
  
- Step 5 : End.
+ Step 5: End.
 
 
 # Flowchart
-
-
 
 ``` mermaid
 flowchart 
