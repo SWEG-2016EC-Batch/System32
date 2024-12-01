@@ -40,4 +40,26 @@ Step 7: Else if y == 0:
 Step 8: Output x raised to the power y is result.
 
 Step 9: End the program.
-
+```mermaid
+flowchart TD
+    id1([Start]) --> id2["Enter the base (x)"]
+    id2 --> id3["Enter the exponent (y)"]
+    id3 --> id4{y > 0?}
+    id4 -->|Yes| id5["Initialize result = 1"]
+    id5 --> id6["For i = 0 to y-1"]
+    id6 --> id7["result *= x"]
+    id7 --> id8["Repeat until i < y"]
+    id8 --> id9{End of loop}
+    id4 -->|No| id10{y < 0?}
+    id10 -->|Yes| id11["Initialize result = 1"]
+    id11 --> id12["For i = 0 to -y-1"]
+    id12 --> id13["result *= x"]
+    id13 --> id14["Repeat until i < -y"]
+    id14 --> id15["result = 1 / result"]
+    id15 --> id16{End of loop}
+    id10 -->|No| id17["Set result = 1"]
+    id17 --> id18([Display result])
+    id9 --> id18
+    id16 --> id18
+    id18 --> id19([End])
+```
