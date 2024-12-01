@@ -27,6 +27,8 @@ Where:
 - Continue calculating BMI for multiple people until the user decides to stop.
 
 
+## Pseudocode 
+``` plaintext
 Step 1: Input the weight in kilograms
 Step 2: Input the height in meters
 Step 3: Calculate BMI using the formula: BMI = weight / (height * height)
@@ -39,8 +41,9 @@ Step 9: Ask the user if they want to continue (y/n)
 Step 10: If the user enters 'y' or 'Y', repeat steps 1 to 9
 Step 11: If the user enters 'n' or 'N', end the program
 End
-## Pseudocode 
-``` mermaid 
+```
+## Flowchart
+``` mermaid
 flowchart TD
     A[Start] --> B[Input weight]
     B --> C[Input height]
@@ -60,3 +63,4 @@ flowchart TD
     M --> N{Choice = 'y' or 'Y'?}
     N -->|Yes| B
     N -->|No| O[End]
+```
