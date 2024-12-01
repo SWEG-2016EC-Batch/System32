@@ -1,17 +1,17 @@
 ## Problem Analysis
 The program calculates the power of a given base x raised to an exponent y using a loop-based approach.
 
-Inputs:  
+**Inputs:**
 - x: The base number.
 - y: The exponent.
 
-Process:  
+**Process:**
 1. Initialize result to 1.
 2. If y > 0: Multiply result by x repeatedly y times.
 3. If y < 0: Multiply result by x repeatedly -y times, then compute the reciprocal of result.
 4. If y == 0: Return 1 (since any number raised to the power of 0 is 1).
 
-Output:  
+**Output:**
 - The value of x raised to the power y, printed in the format:  
   x raised to the power y is result
 
