@@ -32,9 +32,9 @@ The program calculates the total distance an automobile can travel without refue
 ## Flowchart
     ```mermaid
 flowchart TD
-    id1([Start]) --> id2[/Enter the capacity of the fuel tank in gallons/]
-    id2 --> id3[/Enter the miles per gallon the automobile can be driven/]
-    id3 --> id4[ "Calculate totalDistance = tankCapacity * miles"]
-    id4 --> id5[/Display "The automobile can be driven totalDistance miles without refueling"/]
-    id5 --> id6([End])
-```
+    id1([Start])-->id2[/Enter the capacity of the fuel tank in gallons/]
+    id2-->id3[/Enter the miles per gallon the automobile can be driven/]
+    id3-->id4[ totalDistance = tankCapacity * miles]
+    id4-->id5[/print: totalDistance /]
+    id5-->id6([End])
+    ```
