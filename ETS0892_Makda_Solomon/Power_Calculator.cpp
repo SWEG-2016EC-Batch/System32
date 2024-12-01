@@ -16,4 +16,5 @@ int main(){
      cout<<x<<" raised to "<<y<<" is "<<result;
     }    
    
+    return 0;
 }
