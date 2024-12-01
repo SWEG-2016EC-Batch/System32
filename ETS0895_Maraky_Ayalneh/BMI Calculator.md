@@ -45,23 +45,22 @@ End
 ## Flowchart
 ``` mermaid
 flowchart TD
-    id1([Start]) --> id2[/Input weight in kilograms/]
-    id2 --> id3[/Input height in meters/]
+    id1([Start]) --> id2["Input weight in kilograms"]
+    id2 --> id3["Input height in meters"]
     id3 --> id4["BMI = weight / (height * height)"]
-    id4 --> id5[/Display BMI/]
+    id4 --> id5["Display BMI"]
     id5 --> id6{BMI < 18.5?}
-    id6 -->|Yes| id7[Display "Underweight"]
+    id6 -->|Yes| id7["Display 'Underweight'"]
     id6 -->|No| id8{BMI < 24.9?}
-    id8 -->|Yes| id9[Display "Normal weight"]
+    id8 -->|Yes| id9["Display 'Normal weight'"]
     id8 -->|No| id10{BMI < 29.9?}
-    id10 -->|Yes| id11[Display "Overweight"]
-    id10 -->|No| id12[Display "Obese"]
-    id7 --> id13[Ask to continue (y/n)]
+    id10 -->|Yes| id11["Display 'Overweight'"]
+    id10 -->|No| id12["Display 'Obese'"]
+    id7 --> id13["Ask to continue (y/n)"]
     id9 --> id13
     id11 --> id13
     id12 --> id13
     id13 --> id14{Choice = 'y' or 'Y'?}
     id14 -->|Yes| id2
     id14 -->|No| id15([End])
-
 ```
