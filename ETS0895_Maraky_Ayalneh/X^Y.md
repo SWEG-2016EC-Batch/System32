@@ -40,6 +40,7 @@ Step 7: Else if y == 0:
 Step 8: Output x raised to the power y is result.
 
 Step 9: End the program.
+## flowchart
 ```mermaid
 flowchart TD
     id1([Start]) --> id2["Enter the base (x)"]
