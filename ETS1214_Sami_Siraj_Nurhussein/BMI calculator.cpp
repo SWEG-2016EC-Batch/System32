@@ -1,33 +1,27 @@
-#include <iostream> 
-      using namespace std;
-        int main() {
-          float w; 
-          float h;     
-          float BMI;
-          int counter;
-          cout << "Enter the number of people measuring their BMI: ";
-          cin >> counter;
-      
-          for (int i = 1; i <= counter; i++) {
-              cout << "Input your weight in Kg for person " << i << ": ";
-              cin >> w;
-              cout << "Input your height in meters for person " << i << ": ";
-              cin >> h;
-              BMI = w / (h * h);
-              cout << "Your BMI is: " << BMI;
-              if (BMI <= 18.5) {
-                  cout << ", you are underweight" << endl;
-              } 
-              else if (BMI > 18.5 && BMI <= 24.9) {
-                  cout << ", you are at optimum weight" << endl;
-              }
-              else if (BMI > 24.9 && BMI <= 29.9) {
-                  cout << ", you are overweight" << endl;
-              }
-              else {
-                  cout << ", you are obese" << endl;
-              }
-          }
-      
-          return 0;
-        }
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+int num;
+float weight,height,BMI;
+cout<<"Enter the number of individual whose BMI is to be calculated:\n";
+cin>>num;
+for(int i=0;i<num;i++){
+    cout<<"Enter the weight(kg):\n";
+    cin>> weight ;
+     cout<<"Enter the height(m):\n";
+    cin>> height ;
+    BMI=weight/pow(height,2);
+    cout<<"Your BMI is "<<BMI<<endl;
+   if(BMI<=18.5){
+    cout<<"You are underweight\n";
+   }
+   else if((BMI>18.5)&&(BMI<25)){
+    cout<<"You are at a healthy weight\n";
+   }
+   else{
+    cout<<"You are overweight\n";
+   }
+}
+
+}
