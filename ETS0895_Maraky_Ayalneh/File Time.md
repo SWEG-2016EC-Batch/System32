@@ -42,15 +42,15 @@ A serial transmission line can transmit 960 characters per second. Write a progr
 
 ```mermaid
 flowchart TD
-    id1([Start]) --> id2[/Input file size in bytes/]
-    id2 --> id3[Process "transmissionSpeed = 960"]
-    id3 --> id4[Process "totalSeconds = fileSize / transmissionSpeed"]
-    id4 --> id5[Process "days = totalSeconds / 86400"]
-    id5 --> id6[Process "remainingSeconds = totalSeconds % 86400"]
-    id6 --> id7[Process "hours = remainingSeconds / 3600"]
-    id7 --> id8[Process "remainingSeconds = remainingSeconds % 3600"]
-    id8 --> id9[Process "minutes = remainingSeconds / 60"]
-    id9 --> id10[Process "seconds = remainingSeconds % 60"]
-    id10 --> id11[/Output days, hours, minutes, and seconds/]
-    id11 --> id12([End])
-```
+    id1([Start])-->id2[/Input file size in bytes/]
+    id2-->id3[Process transmissionSpeed = 960]
+    id3-->id4[Process totalSeconds = fileSize / transmissionSpeed]
+    id4-->id5[Process days = totalSeconds / 86400]
+    id5-->id6[Process remainingSeconds = totalSeconds % 86400]
+    id6-->id7[Process hours = remainingSeconds / 3600]
+    id7-->id8[Process remainingSeconds = remainingSeconds % 3600]
+    id8-->id9[Process minutes = remainingSeconds / 60]
+    id9-->id10[Process seconds = remainingSeconds % 60]
+    id10-->id11[/Output days, hours, minutes, and seconds/]
+    id11-->id12([End])
+
