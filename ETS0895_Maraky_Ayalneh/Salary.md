@@ -55,19 +55,19 @@ The program calculates an employee's gross salary, net salary, and bonus payment
 
 ```mermaid
 flowchart TD
-    id1([Start]) --> id2[/Input employee's name/]
-    id2 --> id3[/Input weekly working hours/]
-    id3 --> id4[/Input bonus rate per hour/]
-    id4 --> id5[/Input base salary/]
-    id5 --> id6[Process "bonusPayment = weeklyHours * bonusRate"]
-    id6 --> id7[Process "grossSalary = baseSalary + bonusPayment"]
-    id7 --> id8[Process "pensionAmount = grossSalary * 0.05"]
-    id8 --> id9[Process "taxAmount = grossSalary * 0.15"]
-    id9 --> id10[Process "netSalary = grossSalary - (pensionAmount + taxAmount)"]
-    id10 --> id11[/Output employee's name/]
-    id11 --> id12[/Output grossSalary/]
-    id12 --> id13[/Output bonusPayment/]
-    id13 --> id14[/Output netSalary/]
-    id14 --> id15([End])
+    id1([Start])-->id2[/Input employee's name/]
+    id2-->id3[/Input weekly working hours/]
+    id3-->id4[/Input bonus rate per hour/]
+    id4-->id5[/Input base salary/]
+    id5-->id6[Process bonusPayment = weeklyHours * bonusRate]
+    id6-->id7[Process grossSalary = baseSalary + bonusPayment]
+    id7-->id8[Process pensionAmount = grossSalary * 0.05]
+    id8-->id9[Process taxAmount = grossSalary * 0.15]
+    id9-->id10[Process netSalary = grossSalary - pensionAmount + taxAmount]
+    id10-->id11[/Output employee's name/]
+    id11-->id12[/Output grossSalary/]
+    id12-->id13[/Output bonusPayment/]
+    id13-->id14[/Output netSalary/]
+    id14-->id15([End])
 
-```
+
