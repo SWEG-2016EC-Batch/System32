@@ -43,27 +43,27 @@ Step 9: End the program.
 ## flowchart
 ```mermaid
 flowchart TD
-    id1([Start]) --> id2[/Enter the base (x)/]
-    id2 --> id3[/Enter the exponent (y)/]
-    id3 --> id4{y > 0?}
-    id4 -->|Yes| id5[Process "Initialize result = 1"]
-    id5 --> id6[Process "For i = 0 to y-1"]
-    id6 --> id7[Process "result *= x"]
-    id7 --> id8{Decision "i < y?"}
-    id8 -->|Yes| id6
-    id8 -->|No| id9[Process "End of loop"]
-    id4 -->|No| id10{y < 0?}
-    id10 -->|Yes| id11[Process "Initialize result = 1"]
-    id11 --> id12[Process "For i = 0 to -y-1"]
-    id12 --> id13[Process "result *= x"]
-    id13 --> id14{Decision "i < -y?"}
-    id14 -->|Yes| id12
-    id14 -->|No| id15[Process "result = 1 / result"]
-    id15 --> id16[Process "End of loop"]
-    id10 -->|No| id17[Process "Set result = 1"]
-    id17 --> id18[/Display result/]
-    id9 --> id18
-    id16 --> id18
-    id18 --> id19([End])
+    id1([Start])-->id2[/Enter the base x/]
+    id2-->id3[/Enter the exponent y/]
+    id3-->id4{y > 0?}
+    id4--Yes-->id5[Process Initialize result = 1]
+    id5-->id6[Process For i = 0 to y-1]
+    id6-->id7[Process result *= x]
+    id7-->id8{Decision i < y?}
+    id8--Yes-->id6
+    id8--No-->id9[Process End of loop]
+    id4--No-->id10{y < 0?}
+    id10--Yes-->id11[Process Initialize result = 1]
+    id11-->id12[Process For i = 0 to -y-1]
+    id12-->id13[Process result *= x]
+    id13-->id14{Decision i < -y?}
+    id14--Yes-->id12
+    id14--No-->id15[Process result = 1 / result]
+    id15-->id16[Process End of loop]
+    id10--No-->id17[Process Set result = 1]
+    id17-->id18[/Display result/]
+    id9-->id18
+    id16-->id18
+    id18-->id19([End])
 
 ```
