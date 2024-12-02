@@ -14,10 +14,8 @@ The program calculates the total distance an automobile can travel without refue
    - This step involves multiplying the fuel tank capacity by the fuel efficiency (miles per gallon).
 
 #### 3. **Output:**
-   - **totalDistance**: The calculated number of miles the automobile can be driven on a full tank, displayed to the user with a message:
-     
-     "The automobile can be driven <totalDistance> miles without refueling."
-     
+   - **totalDistance**: The calculated number of miles the automobile can be driven on a full tank.
+    
 ## Pseudocode
 
 1. **Start**
@@ -27,7 +25,7 @@ The program calculates the total distance an automobile can travel without refue
 5. **Output** "Enter the miles per gallon the automobile can be driven:"
 6. **Input** miles
 7. **Calculate** totalDistance as tankCapacity * miles
-8. **Output** "The automobile can be driven", totalDistance , miles without refueling.
+8. **Output** totalDistance , miles without refueling.
 9. **End**
     
 ## Flowchart
@@ -35,8 +33,8 @@ The program calculates the total distance an automobile can travel without refue
    ``` mermaid
 flowchart
 
-    id1([Start])-->id2[/Enter the capacity of the fuel tank in gallons/]
-    id2-->id3[/Enter the miles per gallon the automobile can be driven/]
+    id1([Start])-->id2[/Enter the capacity of the fuel tank/]
+    id2-->id3[/Enter the miles per gallon/]
     id3-->id4[*totalDistance = tankCapacity * miles*]
     id4-->id5[/print: totalDistance /]
     id5-->id6([End])
