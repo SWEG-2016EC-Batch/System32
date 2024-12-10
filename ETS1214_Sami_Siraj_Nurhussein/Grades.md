@@ -119,8 +119,10 @@ If total is between 30 and 45 display output as “D”.
 If total is below 30 display output as “F”. 
 
 11.End.
+
 # Flowchart
-''' mermaid
+
+``` mermaid
 graph TD
     A[Start] --> B[Declare variables]
     B --> C[Input score for test]
@@ -164,8 +166,11 @@ graph TD
     AF --> AJ
     AH --> AJ
     AI --> AJ[End]
+
+
+```
+
     
-'''
 
 
 
