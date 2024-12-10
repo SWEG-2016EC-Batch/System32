@@ -35,7 +35,7 @@ int main(){
         return 1;
     }
     cout<<"Enter score obtained for final exam out of (50%): ";
-    cin>>final; 
+    cin>>final_test; 
     if (cin.fail()||final_test>50){
         cout<<"invalid input";
         cin.clear();
