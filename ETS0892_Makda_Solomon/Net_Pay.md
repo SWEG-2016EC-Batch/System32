@@ -35,8 +35,10 @@
 9. Calculate the net pay using the formula.
 10. Display the net pay.
 11. End the program.
-    ###Flowchart
-```mermaid
+
+     ###Flowchart
+```
+mermaid
 flowchart TD
     A[Start] --> B[Input Basic Salary]
     B --> C[Input Worked Hours]
