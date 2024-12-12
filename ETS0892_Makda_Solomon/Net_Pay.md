@@ -38,22 +38,21 @@
 
      ### Flowchart
 
-
 ```mermaid
 flowchart TD 
-    A[Start] --> B[Input Basic Salary]
-    B --> C[Input Worked Hours]
-    C --> D[Input Bonus Rate]
-    D --> E[Calculate Pension (7% of Basic Salary)]
-    E --> F[Input Tax Rate]
-    F --> G[Calculate Tax]
-    G --> H{Worked Hours > 40?}
-    H -- Yes --> I[Input Overtime Rate]
-    I --> J[Calculate Overtime]
-    H -- No --> K[Set Overtime to 0]
-    J --> L[Calculate Net Pay]
-    K --> L
-    L --> M[Output Net Pay]
-    M --> N[End]
+    A([Start])-->B[/Input Basic Salary/]
+    B-->C[/Input Worked Hours/]
+    C-->D[/Input Bonus Rate/]
+    D-->E[Calculate Pension]
+    E-->F[/Input Tax Rate/]
+    F-->G[Calculate Tax]
+    G-->H{Worked Hours > 40?}
+    H--Yes-->I[/Input Overtime Rate/]
+    I-->J[Calculate Overtime]
+    H--No-->K[Set Overtime to 0]
+    J-->L[Calculate Net Pay]
+    K-->L
+    L-->M[/Output Net Pay/]
+    M-->N([End])
 
 ```
