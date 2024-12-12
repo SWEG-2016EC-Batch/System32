@@ -1,12 +1,23 @@
 # Playing with numbers 
 
-## Objective
+## Problem analysis
 Develop a program that allows the user to perform various operations on an integer, such as reversing the number, counting digits, checking for palindromes, swapping first and last digits, and more, through a menu-driven interface.
 
 ## Inputs
 - An integer input from the user (number).
 - User's choice from the menu for the operation to perform.
 
+## process
+1. Reverse the number.
+2. Count the number of digits.
+3. Compute the product of even digits.
+4. Calculate the sum of the first and last digit.
+5. Swap the first and last digit.
+6. Check if the number is a palindrome.
+7. Display the frequency of each digit.
+8. Check if the number is a "Strong" number.
+9. Check if the number is a "Perfect" number.
+   
 ## Outputs
 - Results based on the chosen operation:
   - Reversed number.
@@ -18,16 +29,7 @@ Develop a program that allows the user to perform various operations on an integ
   - Strong number check result.
   - Perfect number check result.
 
-## Operations
-1. Reverse the number.
-2. Count the number of digits.
-3. Compute the product of even digits.
-4. Calculate the sum of the first and last digit.
-5. Swap the first and last digit.
-6. Check if the number is a palindrome.
-7. Display the frequency of each digit.
-8. Check if the number is a "Strong" number.
-9. Check if the number is a "Perfect" number.
+
 # Flowchart    
 ```mermaid
 flowchart TD
