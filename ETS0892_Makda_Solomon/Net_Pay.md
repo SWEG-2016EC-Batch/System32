@@ -36,7 +36,7 @@
 10. Display the net pay.
 11. End the program.
 
-     ###Flowchart
+     ### Flowchart
 ```
 mermaid
 flowchart TD
@@ -54,3 +54,5 @@ flowchart TD
     K --> L
     L --> M[Output Net Pay]
     M --> N[End]
+
+```
