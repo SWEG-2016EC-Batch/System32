@@ -36,6 +36,7 @@
 10. Display the net pay.
 11. End the program.
     ###Flowchart
+```mermaid
 flowchart TD
     A[Start] --> B[Input Basic Salary]
     B --> C[Input Worked Hours]
