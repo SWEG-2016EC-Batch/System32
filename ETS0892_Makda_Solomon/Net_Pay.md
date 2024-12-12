@@ -37,8 +37,9 @@
 11. End the program.
 
      ### Flowchart
-```
-mermaid
+## Flowchart
+
+```mermaid
 flowchart TD
     A[Start] --> B[Input Basic Salary]
     B --> C[Input Worked Hours]
@@ -54,5 +55,3 @@ flowchart TD
     K --> L
     L --> M[Output Net Pay]
     M --> N[End]
-
-```
