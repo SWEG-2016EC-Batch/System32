@@ -56,12 +56,12 @@ flowchart TD
     B-->C[/Input worked_hours/]
     C-->D{worked_hours > 40?}
     D--|Yes|-->E[/Input bonus_rate/]
-    E-->F[Calculate extra_hours = worked_hours - 40]
+    E-->F[Calculate extra_hours]
     D--|No|-->G[Set extra_hours = 0]
-    F-->H[Calculate bonus = extra_hours * bonus_rate]
+    F-->H[Calculate bonus]
     G-->H
-    H-->I[Calculate gross_salary = basic_salary + bonus]
-    I-->J[Calculate pension = basic_salary * 0.07]
+    H-->I[Calculate gross_salary]
+    I-->J[Calculate pension]
     J-->K{gross_salary <= 200?}
     K--|Yes|-->L[Set tax_rate = 0]
     K--|No|-->M{gross_salary <= 600?}
@@ -73,12 +73,12 @@ flowchart TD
     Q--|No|-->S{gross_salary <= 3500?}
     S--|Yes|-->T[Set tax_rate = 0.25]
     S--|No|-->U[Set tax_rate = 0.3]
-    L-->V[Calculate tax = gross_salary * tax_rate]
+    L-->V[Calculate tax]
     N-->V
     P-->V
     R-->V
     T-->V
     U-->V
-    V-->W[Calculate net_salary = gross_salary - pension - tax]
+    V-->W[Calculate net_salary]
     W-->X[/Output gross_salary, pension, tax, and net_salary/]
     X-->Y([End])
