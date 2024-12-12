@@ -40,7 +40,7 @@
 
 
 ```mermaid
-flowchart TD
+flowchart 
     A[Start] --> B[Input Basic Salary]
     B --> C[Input Worked Hours]
     C --> D[Input Bonus Rate]
