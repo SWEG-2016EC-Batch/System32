@@ -4,10 +4,33 @@
 The program will accept an integer input from the user and provide a menu of operations that can be performed on that integer, such as reversing the number, counting its digits, calculating the product of even digits, checking if it's a palindrome, and more.
 
 ## Requirements
-- **Input**: An integer provided by the user.
-- **Operations**: The program will perform multiple operations based on user choice.
-- **Output**: Results for each chosen operation displayed to the user.
-- **User Interactivity**: The program should allow the user to repeatedly perform operations until they choose to exit.
+
+## Inputs
+- An integer input from the user (number).
+- User's choice from the menu for the operation to perform.
+
+## process
+1. Reverse the number.
+2. Count the number of digits.
+3. Compute the product of even digits.
+4. Calculate the sum of the first and last digit.
+5. Swap the first and last digit.
+6. Check if the number is a palindrome.
+7. Display the frequency of each digit.
+8. Check if the number is a "Strong" number.
+9. Check if the number is a "Perfect" number.
+   
+## Outputs
+- Results based on the chosen operation:
+  - Reversed number.
+  - Digit count.
+  - Sum of first and last digit.
+  - Swapped first and last digit.
+  - Palindrome check result.
+  - Frequency of digits.
+  - Strong number check result.
+  - Perfect number check result.
+
 
 ## Constraints
 - The input number should be a positive integer.
