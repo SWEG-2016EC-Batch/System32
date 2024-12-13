@@ -68,7 +68,7 @@ int main() {
   //7
     for (int i = 1; i <= 5; i++) {
         for (int j = 1; j <= 5; j++) {
-            if (i == 1  i == 5 j == 1 || j == 5) {
+            if (i == 1||i == 5||  j == 1 || j == 5) {
                 cout << "* ";
             } else {
                 cout << "  ";
@@ -93,7 +93,7 @@ int main() {
     for (int i = n; i >= 1; i--) {
         for (int j = 1; j <= i; j++) {
         
-            if (i == n  j == 1  j == i) {
+            if (i == n ||  j == 1 ||  j == i) {
                 cout << "*";
             } else {
                 cout << " ";
