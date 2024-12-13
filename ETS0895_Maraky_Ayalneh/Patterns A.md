@@ -47,6 +47,7 @@
 - **Alphabet Patterns**: Displayed as grids or triangular formations of uppercase or lowercase letters.
 - **Star Patterns**: Displayed in various shapes like squares, triangles, pyramids (filled and hollow).
 
+----
 ## Pseudocode
 ### Start
 1. **Numeric Grid**
