@@ -36,7 +36,6 @@ The program will accept an integer input from the user and provide a menu of ope
 - The input number should be a positive integer.
 - The program should handle edge cases, such as zero or single-digit numbers.
 
-# Algorithm
 
 # Flowchart
 
