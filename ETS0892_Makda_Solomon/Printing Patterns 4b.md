@@ -48,20 +48,5 @@ flowchart TD
     E -->|13| R[Print Pattern of numbers]
     E -->|14| S[Print Pattern of alphabets]
     E -->|default| T[Print "Invalid choice!"]
-    F --> U[End]
-    G --> U
-    H --> U
-    I --> U
-    J --> U
-    K --> U
-    L --> U
-    M --> U
-    N --> U
-    O --> U
-    P --> U
-    Q --> U
-    R --> U
-    S --> U
-    T --> UT[Print "Invalid choice!"]
-    S -->U[End]
+    S --> U[End]
 
