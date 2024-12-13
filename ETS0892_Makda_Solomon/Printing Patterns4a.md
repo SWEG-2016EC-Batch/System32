@@ -18,7 +18,7 @@ The task is to generate various patterns using nested loops in C++. The patterns
      
 
 ### Output
-- The program generates and displays one of the following patterns based on the user's choice:
+- The program generates and displays all of patterns:
   1. Numbers printed in rows.
   2. Capital letters printed incrementally.
   3. An incremental triangle of numbers.
