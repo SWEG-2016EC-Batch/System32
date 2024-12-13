@@ -1,6 +1,5 @@
 # Playing with numbers 
 
-## Problem analysis
 The program  allows the user to perform various operations on an integer, such as reversing the number, counting digits, checking for palindromes, swapping first and last digits, and more, through a menu-driven interface.
 
 ## Inputs
@@ -28,7 +27,7 @@ The program  allows the user to perform various operations on an integer, such a
   - Frequency of digits.
   - Strong number check result.
   - Perfect number check result.
-
+----
 
 # Flowchart    
 ```mermaid
