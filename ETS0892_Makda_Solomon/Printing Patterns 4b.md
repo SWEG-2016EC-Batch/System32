@@ -1,5 +1,5 @@
 ## Problem Analysis
-The task is to generate various patterns based on user input in C++. The user specifies the number of rows and columns, as well as the choice of pattern from a predefined set. The available patterns include:
+The program generates various patterns based on user input, using loops for different designs.The available patterns include:
 
 1. Rectangle of stars.
 2. Square of stars.
