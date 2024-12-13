@@ -47,10 +47,8 @@
 - **Alphabet Patterns**: Displayed as grids or triangular formations of uppercase or lowercase letters.
 - **Star Patterns**: Displayed in various shapes like squares, triangles, pyramids (filled and hollow).
 
-# Pseudocode: Printing Patterns Using Nested Loops
-
-## Start
-
+## Pseudocode
+### Start
 1. **Numeric Grid**
    1.1 Initialize a loop `i` from 1 to 5 for rows.  
    1.2 Inside this loop, initialize another loop `j` from 1 to 5 for columns.  
@@ -137,7 +135,6 @@
     12.4 Check if `j` is 1, `j` is `(2 * i - 1)`, or `i` is 5.  
     12.5 If the condition is true, print `*`; otherwise, print a space.  
     12.6 After the inner loop ends, print a newline to move to the next row.  
-
-## End
+### End
 
 
