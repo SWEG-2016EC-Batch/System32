@@ -29,10 +29,10 @@ The task is to generate various patterns based on user input in C++. The user sp
 
 ```mermaid
 flowchart TD
-    A[Start] --> B[Input rows]
-    B --> C[Input columns]
-    C --> D[Input choice of pattern(1-14)]
-    D --> E{Choice}
+    A[Start] -->B[Input rows]
+    B -->C[Input columns]
+    C -->D[Input choice of pattern(1-14)]
+    D -->E{Choice}
     E -->|1| F[Print Rectangle of stars]
     E -->|2| G[Print Square of stars]
     E -->|3| H[Print Half pyramid of stars]
@@ -48,4 +48,4 @@ flowchart TD
     E -->|13| R[Print Pattern of numbers]
     E -->|14| S[Print Pattern of alphabets]
     E -->|default| T[Print "Invalid choice!"]
-    S --> U[End]
+    S -->U[End]
