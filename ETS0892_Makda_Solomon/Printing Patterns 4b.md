@@ -29,9 +29,9 @@ The task is to generate various patterns based on user input in C++. The user sp
 
 ```mermaid
 flowchart TD
-    A[Start] --> B[Prompt for number of rows (n)]
+    A[Start] --> B[Prompt for number of rows(n)]
     B --> C[Read n]
-    C --> D[Prompt for number of columns (m)]
+    C --> D[Prompt for number of columns(m)]
     D --> E[Read m]
     E --> F[For i from 1 to n]
     F --> G[For j from 1 to m]
