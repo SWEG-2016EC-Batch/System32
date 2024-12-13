@@ -1,6 +1,5 @@
 # Salary Calculation
 
-## Problem Analysis
 The program calculates the gross and net salary of an employee based on their basic salary, hours worked, and applicable tax rates. It also includes calculations for overtime bonus and pension deductions.
 
 ### Inputs
