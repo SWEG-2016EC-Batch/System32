@@ -67,8 +67,4 @@ else if (80>total_mark  && total_mark>=75){
     cout<<"F";
        
 }
-
-  
-
-       
 }
