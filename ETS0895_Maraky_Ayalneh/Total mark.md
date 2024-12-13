@@ -1,9 +1,8 @@
 # Total mark and Grade
 
-## Problem analysis 
-Create a program to calculate the total marks for a student based on input for test, quiz, project, assignment, and final exam marks. The program also determines the corresponding grade based on the total marks.
+This program calculates the total marks for a student based on input for test, quiz, project, assignment, and final exam marks. The program also determines the corresponding grade based on the total marks.
 
-## Inputs
+### Inputs
 - Marks for the following:
   - Test (out of 15)
   - Quiz (out of 5)
@@ -11,13 +10,13 @@ Create a program to calculate the total marks for a student based on input for t
   - Assignment (out of 10)
   - Final Exam (out of 50)
 
- ## Process
+ ### Process
 1. Accept marks for all components.
 2. Calculate the total mark by summing up the input marks.
 3. Determine the grade using conditional statements based on the total mark.
 4. Output the total mark and the corresponding grade.
 
-## Outputs
+### Outputs
 - Total mark (sum of all input marks).
 - Grade based on total marks:
   - A: 90 or above
@@ -25,7 +24,8 @@ Create a program to calculate the total marks for a student based on input for t
   - C: 75–79
   - D: 60–74
   - F: Below 45
-
+----
+## Flowchart
 ```mermaid
 flowchart TD
     aA([Start])-->InputMarks[/Input marks for test, quiz, project, assignment, and final exam/]
