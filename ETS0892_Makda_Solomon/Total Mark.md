@@ -99,7 +99,7 @@ END
 flowchart TD
     A[Start] --> B[Input Test Score]
     B -->|Valid?| C{Invalid Input?}
-    C -->|Yes| D[Print "Invalid Input"]
+    C -->|Yes| D[Print Invalid Input]
     C -->|No| E[Input Quiz Score]
     E -->|Valid?| F{Invalid Input?}
     F -->|Yes| D
