@@ -17,10 +17,6 @@ Bonus rate per overtime hours (overtimeBonusRate) in case worked hours > 40
 
 Tax rate (taxRate)
 
-## Outputs:
-
-Net-Pay (netPay)
-
 ## Processing:
 
 First read the basic salary, worked hours and bonus rate of the client.
@@ -55,6 +51,10 @@ Net Compensation = Gross salary – Pension contribution – Tax deduction
 Then put in the output the Net Compensation
 
 grossPay = basicSalary + (workedHours * bonusRate)
+
+## Outputs:
+
+Net-Pay (netPay)
 
 # Flowchart
 ``` mermaid
