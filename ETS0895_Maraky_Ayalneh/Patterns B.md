@@ -1,6 +1,5 @@
 # Pattern Generator 
 
-## **Introduction**
 This program generates various patterns based on user input. Users specify the number of rows and columns (if applicable) and choose from 12 predefined patterns. The patterns include rectangles, pyramids, and hollow shapes made with stars, numbers, or alphabets.
 
 ### **Input**
@@ -23,6 +22,7 @@ This program generates various patterns based on user input. Users specify the n
 ### **Output**
 1. A visual representation of the selected pattern is printed to the console.
 
+----
 ## **Pseudocode**
 START
 1. Declare variables: `rows`, `columns`, `choice`.
