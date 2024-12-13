@@ -1,6 +1,6 @@
 # Problem Analysis
 
-## Problem Statement
+## Problem Analysis
 The program will accept an integer input from the user and provide a menu of operations that can be performed on that integer, such as reversing the number, counting its digits, calculating the product of even digits, checking if it's a palindrome, and more.
 
 ## Requirements
