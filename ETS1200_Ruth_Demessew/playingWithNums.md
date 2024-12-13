@@ -6,50 +6,50 @@ Processes
 The process depends on the user's choice from the menu:
 
 Reverse the Number:
-
 Extract the last digit of the number repeatedly using modulo (%) and append it to a reversed number.
 Remove the last digit by dividing the number by 10 in each iteration.
-Count the Number of Digits:
 
+Count the Number of Digits:
 Use a loop to repeatedly divide the number by 10 until it becomes 0.
 Increment a counter during each iteration.
-Find the Product of Even Digits:
 
+Find the Product of Even Digits:
 Extract each digit using modulo (%).
 Check if the digit is even using the condition digit % 2 == 0.
 Multiply all even digits together.
 If no even digits exist, handle appropriately.
-Find and Sum the First and Last Digit:
 
+Find and Sum the First and Last Digit:
 Extract the last digit using modulo (%).
 Find the first digit by repeatedly dividing the number by 10 until it becomes less than 10.
 Compute the sum of the first and last digits.
-Swap the First and Last Digit:
 
+Swap the First and Last Digit:
 Extract the first and last digits as in the previous step.
 Reverse the number to access all digits in order.
 Swap the first and last digits in the reversed number and restore the original order.
-Check if the Number is a Palindrome:
 
+Check if the Number is a Palindrome:
 Reverse the number as in step 1.
 Compare the reversed number with the original to determine if it’s a palindrome.
-Find the Frequency of Each Digit:
 
+Find the Frequency of Each Digit:
 Use an array of size 10 initialized to 0 to store the count of each digit.
 Extract each digit using modulo (%) and increment the corresponding array index.
 Continue until the number becomes 0.
-Check if the Number is a Strong Number:
 
+Check if the Number is a Strong Number:
 For each digit in the number, compute its factorial.
 Sum the factorials of all digits.
 Compare the sum to the original number.
-Check if the Number is a Perfect Number:
 
+Check if the Number is a Perfect Number:
 Sum all divisors of the number (excluding itself) by iterating from 1 to number - 1.
 Check if the sum of divisors equals the original number.
-Exit:
 
+Exit:
 End the program.
+
 Outputs
 Reversed Number: The number reversed digit by digit.
 Digit Count: Total digits in the number.
