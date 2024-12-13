@@ -31,7 +31,9 @@ The program calculates a student's total mark based on scores from various asses
 
 ### Pseudocode 
 START
+    
     DECLARE test, quiz, project, assignment, final_exam, total_mark AS DOUBLE
+    
     DECLARE grade AS CHAR
     
     PRINT "Enter Test Score (out of 15%):"
@@ -92,6 +94,7 @@ START
 END
 
 #### Flowchart
+
 ```mermaid
 flowchart TD
     A[Start] --> B[Input Test Score]
@@ -114,3 +117,5 @@ flowchart TD
     N --> O[Determine Letter Grade]
     O --> P[Output Letter Grade]
     P --> Q[End]
+
+```
