@@ -46,26 +46,29 @@ int main() {
         }  
     total_mark=test+quiz+project+assignment+final_exam;
                   
-                 
+    cout << "Total Mark: " << total_mark << endl;             
        
-  if (total_mark >= 90) {
-        grade = 'A';
-    } else if (total_mark >= 80) {
-        grade = 'A';
-    } else if (total_mark >= 75) {
-        grade = 'B';
-    } else if (total_mark >= 60) {
-        grade = 'C';
-    } else if (total_mark >= 55) {
-        grade = 'C';
-    } else if (total_mark >= 45) {
-        grade = 'D';
-    } else {
-        grade = 'F';
-    }
+if (total_mark>=90){
+        cout<<"A+";
+    }else if (90>total_mark>=80){
+        cout<<"A";
+}
+else if (80>total_mark  && total_mark>=75){
+    cout<<"B+";
+}else if (75>total_mark && total_mark >=60){
+    cout<<"B";
+}else if (60>total_mark && total_mark>=55){
+    cout<<"C+";
+}else if (55>total_mark && total_mark>=45){
+    cout<<"C";
+}else if (45>total_mark && total_mark>=30){
+    cout<<"D";
+}else if (total_mark<30){
+    cout<<"F";
+       
+}
 
-    cout << "Total Mark: " << total_mark << endl;
-    cout << "Grade: " << grade << endl;
+  
 
        
 }
