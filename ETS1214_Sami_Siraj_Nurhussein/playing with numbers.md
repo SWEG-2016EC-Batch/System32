@@ -38,3 +38,48 @@ Calculate the factorial of each digit and sum them up to check if the number is 
 Check if the sum of all divisors (excluding the number itself) equals the number.
 10.Exit:
 Exit the program.
+# Flowchart
+
+``` mermaid
+graph TD
+    A[Start] --> B[Display menu]
+    B --> C[Input choice]
+    C --> D{Choice == 1}
+    D -->|Yes| E[Reverse the number]
+    E --> Z[Output result]
+    D -->|No| F{Choice == 2}
+    F -->|Yes| G[Count digits]
+    G --> Z
+    F -->|No| H{Choice == 3}
+    H -->|Yes| I[Product of even digits]
+    I --> Z
+    H -->|No| J{Choice == 4}
+    J -->|Yes| K[Print first and last digit]
+    K --> Z
+    J -->|No| L{Choice == 5}
+    L -->|Yes| M[Swap first and last digit with sum]
+    M --> Z
+    L -->|No| N{Choice == 6}
+    N -->|Yes| O[Check for palindrome]
+    O --> Z
+    N -->|No| P{Choice == 7}
+    P -->|Yes| Q[Frequency of each digit in table]
+    Q --> Z
+    P -->|No| R{Choice == 8}
+    R -->|Yes| S[Check for strong number]
+    S --> Z
+    R -->|No| T{Choice == 9}
+    T -->|Yes| U[Check for perfect number]
+    U --> Z
+    T -->|No| V{Choice == 10}
+    V -->|Yes| W[Exit]
+    W --> X[End]
+    V -->|No| Y[Invalid choice]
+    Y --> B
+    Z --> B
+
+
+
+```
+
+    
