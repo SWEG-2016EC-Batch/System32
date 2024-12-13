@@ -1,29 +1,29 @@
 ## Problem Analysis
 The program generates various patterns based on user input, using loops for different designs.The available patterns include:
 
-1. Rectangle of stars.
-2. Square of stars.
-3. Half pyramid of stars.
-4. Half pyramid of numbers.
-5. Inverted half pyramid of stars.
-6. Half pyramid of alphabets.
-7. Inverted half pyramid of alphabets.
-8. Full pyramid of stars.
-9. Inverted full pyramid of stars.
-10. Hollow full pyramid of stars.
-11. Inverted hollow full pyramid of stars.
-12. A custom pattern (to be defined).
-13. Pattern of numbers.
-14. Pattern of alphabets.
+## Inputs
+- **Rows**: The number of rows for the pattern (integer).
+- **Columns**: The number of columns for patterns that require a rectangular or square layout (integer).
+- **Choice**: The selected pattern type (integer between 1 and 14).
 
-## Algorithm
-1. Start the program.
-2. Prompt the user to enter the number of rows and columns.
-3. Prompt the user to enter the choice of pattern (1-14).
-4. Use a switch statement to generate the selected pattern:
-   - For each case, use nested loops to generate the desired output.
-5. Print the results for the chosen pattern.
-6. End the program
+## Processes
+1. **Rectangle of Stars**: Print a rectangle of stars using nested loops.
+2. **Square of Stars**: Same as the rectangle, assuming rows = columns.
+3. **Half Pyramid of Stars**: Incremental rows of stars.
+4. **Half Pyramid of Numbers**: Incremental rows of numbers.
+5. **Inverted Half Pyramid of Stars**: Decreasing stars in each row.
+6. **Half Pyramid of Alphabets**: Incremental rows of alphabets.
+7. **Inverted Half Pyramid of Alphabets**: Decreasing rows of alphabets.
+8. **Full Pyramid of Stars**: Centered pyramid of stars.
+9. **Inverted Full Pyramid of Stars**: Centered pyramid with decreasing rows.
+10. **Hollow Full Pyramid of Stars**: Pyramid with stars only at edges and base.
+11. **Inverted Hollow Full Pyramid of Stars**: Similar to the hollow pyramid but inverted.
+12. **Custom Pattern**: Placeholder for user-defined patterns.
+13. **Pattern of Numbers**: Rectangular grid of numbers.
+14. **Pattern of Alphabets**: Rectangular grid of alphabets, looping after 'Z'.
+
+## Outputs
+The program outputs the selected pattern.
 
 ### Flowchart
 
