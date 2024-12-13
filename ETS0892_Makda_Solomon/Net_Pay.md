@@ -53,61 +53,8 @@ Net Compensation is given by the formulas:
 Net Compensation = Gross salary – Pension contribution – Tax deduction
 
 Then put in the output the Net Compensation
-# psuedocode
-1.start
-
-2.Declare variables: basicSalary, workedHours, bonusRate, overtimeBonusRate, taxRate, grossPay, netPay, pensionDeduction, taxDeduction
-
-3.Input basic salary
-
-4.Input worked hours
-
-5.Input bonus rate
-
-6.If worked hours > 40 Then
- *Input overtime bonus rate per hour
-
-7.Input tax rate
-
-8.Calculate gross pay:
 
 grossPay = basicSalary + (workedHours * bonusRate)
-
-9.If worked hours > 40 Then
-   grossPay = grossPay + ((workedHours - 40) * overtimeBonusRate)
-   Calculate pension deduction:
-   pensionDeduction = grossPay * 0.07
-
-10.Calculate tax deduction based on tax rate ranges:
-
-11.If gross pay <= 200 Then
-
-taxDeduction = 0
-
- Else If gross pay <= 600 Then
- taxDeduction = (grossPay - 200) * 0.10
-
- Else If gross pay <= 1200 Then
- taxDeduction = (400 * 0.10) + (grossPay - 600) * 0.15
-
- Else If gross pay <= 2000 Then
- taxDeduction = (400 * 0.10) + (600 * 0.15) + (grossPay - 1200) * 0.20
-
- Else If gross pay <= 3500 Then
- taxDeduction = (400 * 0.10) + (600 * 0.15) + (800 * 0.20) + (grossPay - 2000) * 0.25
-
- Else
- taxDeduction = (400 * 0.10) + (600 * 0.15) + (800 * 0.20) + (1500 * 0.25) + (grossPay - 3500) * 0.30
-
-12.Calculate net pay:
- *netPay = grossPay - pensionDeduction - taxDeduction
-
-13.Output net pay
-
-14.End
-
-
-
 
 # Flowchart
 ``` mermaid
