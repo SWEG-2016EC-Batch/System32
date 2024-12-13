@@ -31,7 +31,7 @@ The task is to generate various patterns based on user input in C++. The user sp
 flowchart TD
     A[Start] -->B[Input rows]
     B -->C[Input columns]
-    C -->D[Input choice of pattern(1-14)]
+    C -->D[Input choice of pattern1-14]
     D -->E{Choice}
     E -->|1|F[Print Rectangle of stars]
     E -->|2|G[Print Square of stars]
