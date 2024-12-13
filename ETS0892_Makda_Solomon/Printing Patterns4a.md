@@ -1,26 +1,36 @@
 ## Problem Analysis
 The task is to generate various patterns using nested loops in C++. The patterns include:
 
-1. Printing numbers in rows.
-2. Printing capital letters incrementally.
-3. Printing numbers in an incremental triangle.
-4. Printing decreasing numbers in a right-aligned triangle.
-5. Printing letters in an incremental triangle.
-6. Printing lowercase letters.
-7. Printing a hollow rectangle.
-8. Printing an inverted triangle of stars.
-9. Printing a hollow inverted triangle.
-10. Printing a left-aligned triangle of stars.
-11. Printing a right-aligned triangle of stars.
-12. Printing a hollow left-aligned triangle.
 
-## Algorithm
+### Input
+- The user specifies:
+  1. The number of rows (`n`).
+  2. The number of columns (if applicable).
+  3. The choice of pattern (1-12).
+
+### Processing
 1. Start the program.
-2. Initialize necessary variables (`n`, `rows`, `columns`).
-3. For each pattern:
-   - Use nested loops to generate the desired output.
-   - Print the results for each pattern.
-4. End the program.
+2. Prompt the user for input values (`n`, `rows`, `columns`, and `choice`).
+3. Based on the user's choice, use nested loops to generate the desired pattern.
+   - Implement specific logic for each pattern.
+4. Print the generated pattern to the console.
+5. End the program.
+     
+
+### Output
+- The program generates and displays one of the following patterns based on the user's choice:
+  1. Numbers printed in rows.
+  2. Capital letters printed incrementally.
+  3. An incremental triangle of numbers.
+  4. A right-aligned triangle of decreasing numbers.
+  5. An incremental triangle of letters.
+  6. Lowercase letters printed in rows.
+  7. A hollow rectangle made of stars.
+  8. An inverted triangle of stars.
+  9. A hollow inverted triangle of stars.
+  10. A left-aligned triangle of stars.
+  11. A right-aligned triangle of stars.
+  12. A hollow left-aligned triangle of stars.
 
 
 ### Flowchart
