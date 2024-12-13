@@ -11,7 +11,7 @@
 1. Start the program.
 2. Define the necessary variables:
    - `n`, `rows`, and `columns`.
-3. Generate each pattern using nested loops:
+3. Generate each pattern using for nested loops:
    - **Pattern 1:** Loop through numbers and print them in rows.
    - **Pattern 2:** Loop through letters, incrementing for each row.
    - **Pattern 3:** Print an incremental triangle of numbers using nested loops.
