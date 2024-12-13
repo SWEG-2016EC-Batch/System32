@@ -1,7 +1,7 @@
 # Playing with numbers 
 
 ## Problem analysis
-Develop a program that allows the user to perform various operations on an integer, such as reversing the number, counting digits, checking for palindromes, swapping first and last digits, and more, through a menu-driven interface.
+The program  allows the user to perform various operations on an integer, such as reversing the number, counting digits, checking for palindromes, swapping first and last digits, and more, through a menu-driven interface.
 
 ## Inputs
 - An integer input from the user (number).
