@@ -144,11 +144,9 @@ int main () {
             break;
 
         case 12:
-            cout << "Your custom pattern here" << endl;
-            // Add the logic for the new pattern here
-            break;
+         
 
-        case 13:
+        
             cout << "Pattern of numbers" << endl;
             for (int i = 1; i <= rows; i++) {
                 for (int j = 1; j <= columns; j++) {
@@ -159,7 +157,7 @@ int main () {
             cout << endl;
             break;
 
-        case 14:
+        case 13:
             cout << "Pattern of alphabets" << endl;
             for (int i = 1; i <= rows; i++) {
                 char letter = 'A';
