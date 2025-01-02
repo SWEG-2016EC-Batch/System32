@@ -1,5 +1,5 @@
 #include <iostream>
-#include <thread>//to perform multiple processes concurently ie. the game and its timer for hard dificulty
+
 #include <chrono>//for the timer
 #include <unistd.h>//for the sleep function
 using namespace std;
