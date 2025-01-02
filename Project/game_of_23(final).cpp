@@ -201,6 +201,7 @@ c:
                 if (*difficulty == 'H' && elapsed_seconds.count() > time_limit) // elapsed time is compared with the time limit
                 {
                     cout << "Time's up! You were too slow, so you lose your turn." << endl;
+                    sleep(1);
                     goto f;
                 }
                 if (cin.fail())
@@ -222,7 +223,7 @@ c:
                 }
                 *toothpick -= *player;
 
-            f:
+           
                 if (*toothpick > 0)
                 {
                     for (int i = 0; i < 6; i++)
@@ -234,6 +235,7 @@ c:
                         cout << endl;
                     }
                 }
+             f:
                 if (*toothpick == 0)
                 {
                     cout << "You picked the last toothpick, so you've lost." << endl;
