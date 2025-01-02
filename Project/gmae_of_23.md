@@ -1,7 +1,9 @@
 ```mermaid
 flowchart
 id1([Start])-->id2[total = 0, wins = 0, loses = 0,time_limit = 7]
-id2-->id3[/input: game mode choice/]
+id2-->id55[/output: pattern,instructions/]-->id3[/input: game mode choice/]
+
+
 id3-->id4{choice==1?}
 
 subgraph single player mode
