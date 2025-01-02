@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include <chrono>   // for the timer
 #include <unistd.h> // for the sleep function
 #include <cstdlib>  // for the random number function
