@@ -76,7 +76,7 @@ id49-->id48{change game mode?}
 end
 
 id48--yes-->id3
-id7-->id3
+id7-->id5
 id34--no-->id3
 id51--true---------->id52([end])
 id35--false-->id51{choice==3?}
