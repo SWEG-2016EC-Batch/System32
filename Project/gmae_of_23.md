@@ -14,7 +14,7 @@ difficulty!='M'&&
 difficulty!='H'?}
 id6--ture-->id7[/Error message/]
 id6--flase-->id8[total++
-stick=23]
+toothpick=23]
 id8-->id23{remaing toothpicks>0}--true-->id9[/output: reamianing toothpicks/]
 id9-->id12{difficulty == 'H'?}
 id12--true-->id13[start timer]
@@ -52,7 +52,7 @@ subgraph 2 player mode
 
 id4--false---->id35{choice==2?}
 id35--true-->id36[total++
-stick=23]
+toothpick=23]
 id36-->id37{remaining toothpicks>0?}
 id37--ture-->id38[/output: remaining toothpicks/]
 id38-->id39[/input: number of toothpicks to be removed by player 1/]
