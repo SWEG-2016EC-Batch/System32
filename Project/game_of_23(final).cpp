@@ -137,9 +137,12 @@ int main()
     char *decision = new char, *game_mode = new char, *difficulty = new char;
     int *player = new int, *total = new int(0), *wins = new int(0), *loses = new int(0), *choice = new int;
     const int time_limit = 7; // time limit is 7 instead of 5 to account for the 2 seconds given for the player to read instructions
-
+    cout << "Welcome to Game of 23!" << endl;
+    cout << "Rules:  You and your opponent take turns removing 1 to 3 sticks from a pile of 23 sticks." << endl;
+    cout << "\tThe player who picks the last stick loses the game." << endl;
+    
     cout << "Let's play" << endl;
-    cout << "In this game, the last person to pick a toothpick loses." << endl;
+  
 
 c:
     cout << "Enter (1) for single player mode (vs. computer)" << endl;
