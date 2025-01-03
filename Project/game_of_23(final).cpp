@@ -161,7 +161,7 @@ c:
 
         while (true)
         {
-            (*total)++;
+            (*total)++;//update stats
             int *toothpick = new int(23);
 
             while (*toothpick >= 0)
@@ -169,7 +169,7 @@ c:
                 if (*toothpick > 0)
                 {
                     sleep(1);
-                    for (int i = 0; i < 6; i++)
+                    for (int i = 0; i < 6; i++)//display pattern of remaining toothpicks at the begining and after every move by the computer
                     {
                         for (int j = 0; j < *toothpick; j++)
                         {
@@ -182,7 +182,7 @@ c:
                 if (*toothpick == 0)
                 {
                     cout << "Computer picked the last toothpick, so it lost." << endl;
-                    (*wins)++;
+                    (*wins)++;//update stats
                     delete toothpick;
                     goto a;
                 }
@@ -223,12 +223,12 @@ c:
                     cout << "Error: The number should be less than or equal to the remaining number of toothpicks." << endl;
                     goto b;
                 }
-                *toothpick -= *player;
+                *toothpick -= *player;//update the number of toothpicks
 
            
                 if (*toothpick > 0)
                 {
-                    for (int i = 0; i < 6; i++)
+                    for (int i = 0; i < 6; i++)//display pattern after every move by the computer
                     {
                         for (int j = 0; j < *toothpick; j++)
                         {
@@ -242,29 +242,29 @@ c:
                 if (*toothpick == 0)
                 {
                     cout << "You picked the last toothpick, so you've lost." << endl;
-                    (*loses)++;
+                    (*loses)++;//update stats
                     delete toothpick;
                     goto a;
                 }
                 else if (*toothpick == 1)
                 {
-                    *toothpick -= 1;
+                    *toothpick -= 1;//update the number of toothpicks
                 }
                 else if (*difficulty == 'E')
                 {
                     int random;
-                    if (*toothpick >= 3)
+                    if (*toothpick >= 3)//random number between 1-3
                     {
                         random = (rand() % 3 + 1);
                     }
-                    else
+                    else//random number between 1 and remaining toothpicks
                     {
                         random = (rand() % *toothpick + 1);
                     }
                     cout << "Computer's turn." << endl;
                     sleep(1);
                     cout << "Computer takes " << random << " toothpick(s)." << endl;
-                    *toothpick -= random;
+                    *toothpick -= random;//update the number of toothpicks
                 }
                 else if (*difficulty == 'M')
                 {
@@ -273,14 +273,14 @@ c:
                         cout << "Computer's turn." << endl;
                         sleep(1);
                         cout << "Computer takes " << 4 - *player << " toothpick(s)." << endl;
-                        *toothpick -= (4 - *player);
+                        *toothpick -= (4 - *player);//update the number of toothpicks
                     }
                     else if (*toothpick <= 4 && *toothpick > 1)
                     {
                         cout << "Computer's turn." << endl;
                         sleep(1);
                         cout << "Computer takes " << *toothpick - 1 << " toothpick(s)." << endl;
-                        *toothpick -= *toothpick - 1;
+                        *toothpick -= *toothpick - 1;//update the number of toothpicks
                     }
                 }
                 else if (*difficulty == 'H')
@@ -290,14 +290,14 @@ c:
                         cout << "Computer's turn." << endl;
                         sleep(1);
                         cout << "Computer takes " << 4 - *player << " toothpick(s)." << endl;
-                        *toothpick -= (4 - *player);
+                        *toothpick -= (4 - *player);//update the number of toothpicks
                     }
                     else if (*toothpick <= 4 && *toothpick > 1)
                     {
                         cout << "Computer's turn." << endl;
                         sleep(1);
                         cout << "Computer takes " << *toothpick - 1 << " toothpick(s)." << endl;
-                        *toothpick -= *toothpick - 1;
+                        *toothpick -= *toothpick - 1;//update the number of toothpicks
                     }
                 }
             }
@@ -333,7 +333,7 @@ c:
             int *toothpick = new int(23);
             (*total)++;
             *turn = 1;
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 6; i++)//display pattern of remaining toothpicks at the begining
             {
                 for (int j = 0; j < *toothpick; j++)
                 {
@@ -369,7 +369,7 @@ c:
 
                 if (*toothpick > 0)
                 {
-                    for (int i = 0; i < 6; i++)
+                    for (int i = 0; i < 6; i++)//display pattern of remaining toothpicks after each player's turn
                     {
                         for (int j = 0; j < *toothpick; j++)
                         {
@@ -383,13 +383,13 @@ c:
                 *turn = (*turn == 1) ? 2 : 1; // Alternate turns
             }
 
-            if (*turn == 1)
+            if (*turn == 1)//update stats
             {
                 cout << "Since Player 2 took the last toothpick, Player 1 wins." << endl;
                 wins[0]++;
                 loses[1]++;
             }
-            else
+            else//update stats
             {
                 cout << "Since Player 1 took the last toothpick, Player 2 wins." << endl;
                 wins[1]++;
