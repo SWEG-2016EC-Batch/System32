@@ -180,7 +180,7 @@ c:
                         }
                         cout << endl;   
                     }
-                    cout << "Remaining toothpicks " << *toothpick << endl;
+                    cout << "Remaining toothpicks: " << *toothpick << endl;
                 }
                 if (*toothpick == 0)
                 {
@@ -239,7 +239,7 @@ c:
                         }
                         cout << endl;
                     }
-                    cout << "Remaining toothpicks " << *toothpick << endl;
+                    cout << "Remaining toothpicks: " << *toothpick << endl;
                 }
              f:
                 if (*toothpick == 0)
@@ -344,7 +344,7 @@ c:
                 }
                 cout << endl;
             }
-            cout << "Remaining toothpicks " << *toothpick << endl;
+            cout << "Remaining toothpicks: " << *toothpick << endl;
             while (*toothpick > 0)
             {
             e:
@@ -380,7 +380,7 @@ c:
                         }
                         cout << endl;
                     }
-                    cout << "Remaining toothpicks " << *toothpick << endl;
+                    cout << "Remaining toothpicks: " << *toothpick << endl;
                 }
 
                 *turn = (*turn == 1) ? 2 : 1; // Alternate turns
